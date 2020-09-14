@@ -18,7 +18,7 @@ published: true
 
 {% include page/title.html title=page.title subtitle=page_subtitle %}
 
-<img width="auto" src="assets/5qi38njir9vsm46ync2qjvrrs.svg">
+<img width="auto" src="/uploads/5qi38njir9vsm46ync2qjvrrs.svg">
 
 # Olá, sou o Filipe Batista. 👋
 
