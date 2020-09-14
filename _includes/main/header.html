@@ -7,12 +7,19 @@
       </div>
 
         <ul>
-            <li><a href="{{ '/about' | prepend: site.baseurl }}">about</a></li>
-            <li><a href="{{ '/archive' | prepend: site.baseurl }}">archive</a></li>
+            <li><a href="{{ '/sobre' | prepend: site.baseurl }}">Sobre</a></li>
+            <li><a href="{{ '/arquivo' | prepend: site.baseurl }}">Arquivo</a></li>
         </ul>
     </div>
     <div class="social">
       <ul>
+        {% if site.author.linkedin %}
+        <li>
+            <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}" target="_blank" class="smaller">
+              <span class="icon-linkedin"></span>
+            </a>
+        </li>
+        {% endif %}
         {% if site.author.youtube %}
         <li>
             <a href="https://youtube.com/{{ site.author.youtube }}" target="_blank" class="smaller">
