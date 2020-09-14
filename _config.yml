@@ -31,9 +31,10 @@ author:
   mail                      : filipe.x2016@gmail.com # change to your e-mail address
   twitter                   : filipegaucho22
   github                    : filipeleonelbatista
-  # youtube                   : youtube-user-name
-  # stackoverflow             : stackoverflow-user-name
-  # disqus                    : dactl # your disqus site name
+  youtube                   : #youtube-user-name
+  stackoverflow             : #stackoverflow-user-name
+  disqus                    : #dactl # your disqus site name
+  linkedin                  : filipelbatista
   google_analytics          : # 'UA-XXXXXXXX-X'
   photo                     : "uploads/me2.png"
   photo2x                   : "uploads/me.png"
