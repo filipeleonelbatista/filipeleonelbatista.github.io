@@ -11,7 +11,8 @@ published: true
 ## Primeiro post oficial
 
 Pensando em como iniciar, vou falar sobre minha recente descoberta sobre o [GitHub Pages](https://pages.github.com/).
-
+{: .lead}
+<!–-break-–>
 Lendo sobre isso que eu poderia manter um site hospedado no GitHub tanto para projetos ou para meu portfólio fiquei animado e comecei a estudar.
 Vi que poderia usar uma estrutura estática com HTML, então subi um site que tinha montado com `bootstrap` para ver como se comportava a estrutura, e, por fim, descobri que
 funciona adequadamente, mas queria algo mais dinâmico que pudesse expor meus trabalhos e conquistas. 
