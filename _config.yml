@@ -27,7 +27,7 @@ blog:
 # Author info
 author:
   fullname                  : Filipe de Leonel Batista
-  rss                       : false # generate RSS feed and show it's icon in header
+  rss                       : true # generate RSS feed and show it's icon in header
   mail                      : filipe.x2016@gmail.com # change to your e-mail address
   twitter                   : #filipegaucho22
   github                    : filipeleonelbatista
