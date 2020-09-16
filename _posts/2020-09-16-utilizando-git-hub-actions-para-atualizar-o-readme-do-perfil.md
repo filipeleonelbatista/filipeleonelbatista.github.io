@@ -11,9 +11,7 @@ published: true
 ## Utilizando git hub actions para atualizar o readme do perfil
 
 Estava pensando em como atualizar dinamicamente o meu perfil do Github para mostrar a listagem de posts que faço aqui na minha página. 
-<!-- break -->
-
-![Tela do workflow](https://github.com/filipeleonelbatista/filipeleonelbatista.github.io/blob/master/uploads/posts/workflow-action.JPG)
+<!--break-->
 
 Foi então que o `Youtube` me recomendou um [vídeo](https://www.youtube.com/watch?v=ECuqb5Tv9qI) que dava as dicas. Como é inglês e nem todos tem um inglês de ouvido bom, 
 vou fazer a explicação apenas da listagem das postagens, os demais itens ficam fácil de entender depois.
