@@ -48,16 +48,5 @@
 
     <!-- Post content -->
     {{ post.content | remove: '&lt;!–-break-–&gt;' }}
+</article>  
 
-  
-  <!-- Sobre o autor -->
-  <div class="my-class">
-    <h2>Sobre o autor</h2>
-    <h4>
-      <a href="{{ '/' | prepend: site.baseurl }}">
-        {{ site.author.fullname }}
-      </a>
-    <h4>
-          <span>{{ site.blog.description }}</span>
-      </div>
-</article>
