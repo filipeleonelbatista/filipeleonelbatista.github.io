@@ -24,7 +24,7 @@ meu repositório e utilizar ou pode mencionar as suas no src do image.
 
 [Link do repositório](https://github.com/filipeleonelbatista/filipeleonelbatista)
 
-```MD
+```
 <img width="auto" src="https://github.com/filipeleonelbatista/filipeleonelbatista/blob/master/5qi38njir9vsm46ync2qjvrrs.svg">
 
 # Olá, sou o Filipe Batista. 👋
