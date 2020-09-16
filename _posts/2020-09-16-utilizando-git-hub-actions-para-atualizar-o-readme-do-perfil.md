@@ -24,7 +24,7 @@ meu repositório e utilizar ou pode mencionar as suas no src do image.
 
 [Link do repositório](https://github.com/filipeleonelbatista/filipeleonelbatista)
 
-```
+<code>
 <img width="auto" src="https://github.com/filipeleonelbatista/filipeleonelbatista/blob/master/5qi38njir9vsm46ync2qjvrrs.svg">
 
 # Olá, sou o Filipe Batista. 👋
@@ -117,11 +117,11 @@ Sou desenvolvedor PowerBuilder 11.5, PHP, Python for web, um pouquinho de Oracle
   </a>
 </p>
 
-```
+</code>
 
 Na sequência, precisamos criar uma pasta no repositório com o seguinte caminho `.github/workflows/blog-post-workflow.yml` e coloca a seguinte informação nele
 
-```yml
+<code>
 name: Latest blog post workflow
 on:
   schedule: # Run workflow automatically
@@ -137,13 +137,13 @@ jobs:
         with:
           feed_list: "https://filipeleonelbatista.github.io/feed.xml"
 
-```
+</code>
 Você pode mudar o nome do workflow e o principal, onde diz `feed_list` colocar o link da sua lista de `feed RSS`. O resto manter igual o que está ali. 
 Os links dos repositórios vão estar no final do artigo.
 
 Após vamos voltar no nosso `README.MD` e incluir os marcadores `<!-- BLOG-POST-LIST:START -->` e `<!-- BLOG-POST-LIST:END -->` onde nosso workflow vai inserir os dados.
 
-```MD
+<code>
 ...
 
 ### 🚨 Ultimas postagens
@@ -152,7 +152,7 @@ Após vamos voltar no nosso `README.MD` e incluir os marcadores `<!-- BLOG-POST-
 
 ...
 
-```
+</code>
 
 Feito isso agora vamos rodar nossa `action` indo na `home` do `repositório` e ver todas as `actions` que temos ali.
 <img width="auto" src="https://github.com/filipeleonelbatista/filipeleonelbatista.github.io/blob/master/uploads/posts/workflow-action.JPG" />
