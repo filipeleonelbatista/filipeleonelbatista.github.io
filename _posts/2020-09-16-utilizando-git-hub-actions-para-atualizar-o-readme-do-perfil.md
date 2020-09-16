@@ -160,9 +160,11 @@ Basta clicar no botão `Run Workflow` que ele irá colocar na fila e iniciar a c
 
 Se tiver mais duvidas assista o vídeo. apesar de ser inglês não interfere muito na parte do entendimento.
 
-Enfim. era isso por enquanto! Não esquece de conectar no `[Linkedin](https://www.linkedin.com/in/filipelbatista)` para acompanhar os aprendizados e trocar uma idéia.
+Enfim. era isso por enquanto! Não esquece de conectar no [`Linkedin`](https://www.linkedin.com/in/filipelbatista) para acompanhar os aprendizados e trocar uma idéia.
 Até Mais
 
 ## Links de referência
-[Next Level GitHub Profile README (NEW) | How To Create An Amazing Profile ReadMe With GitHub Actions](https://www.youtube.com/watch?v=ECuqb5Tv9qI)
-[BLOG POST Workflow Repo](https://github.com/gautamkrishnar/blog-post-workflow)
+
+ - [Next Level GitHub Profile README (NEW) | How To Create An Amazing Profile ReadMe With GitHub Actions](https://www.youtube.com/watch?v=ECuqb5Tv9qI)
+
+ - [BLOG POST Workflow Repo](https://github.com/gautamkrishnar/blog-post-workflow)
