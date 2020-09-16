@@ -158,7 +158,7 @@ Após vamos voltar no nosso `README.MD` e incluir os marcadores `<!-- BLOG-POST-
 
 Feito isso agora vamos rodar nossa `action` indo na `home` do `repositório` e ver todas as `actions` que temos ali.
 
-<img width="auto" src="https://github.com/filipeleonelbatista/filipeleonelbatista.github.io/blob/master/uploads/posts/workflow-action.JPG" />
+![800x400](https://github.com/filipeleonelbatista/filipeleonelbatista.github.io/blob/master/uploads/posts/workflow-action.JPG "Tela do workflow"){:.lead}
 
 Basta clicar no botão `Run Workflow` que ele irá colocar na fila e iniciar a captura de informações do `feed RSS`.
 
