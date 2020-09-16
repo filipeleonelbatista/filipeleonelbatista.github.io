@@ -119,7 +119,7 @@ Sou desenvolvedor PowerBuilder 11.5, PHP, Python for web, um pouquinho de Oracle
 Na sequência, precisamos criar uma pasta no repositório com o seguinte caminho `.github/workflows/blog-post-workflow.yml` e coloca a seguinte informação nele
 
 
-~~~YML
+~~~
 name: Latest blog post workflow
 on:
   schedule: # Run workflow automatically
