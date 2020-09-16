@@ -21,7 +21,7 @@ vou fazer a explicação apenas da listagem das postagens, os demais itens ficam
 O primeiro passo que fiz foi criar o meu readme bem estiloso, se é que você entende 😅, enfim. O código que utilizei está abaixo. Você pode salvar as imagens que ficam no 
 meu repositório e utilizar ou pode mencionar as suas no src do image.
 
-[<img src="https://raw.githubusercontent.com/filipeleonelbatista/filipeleonelbatista.github.io/master/assets/img/github.png" width="16" /> Link do repositório](https://github.com/filipeleonelbatista/filipeleonelbatista)
+[Link do repositório](https://github.com/filipeleonelbatista/filipeleonelbatista)
 
 {% highlight markdown %}
 ~~~
