@@ -1,32 +1,111 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="dark">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
-  <title>
-    Filipe de Leonel Batista - Desenvolvedor de software
-  </title>
-  <meta name="keywords"
-    content="desenvolvedor, sites, gravataí, porto alegre, desenvolvedor de sites, desenvolvedor de aplicativos, aplicativos" />
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            border: "hsl(var(--border))",
+            input: "hsl(var(--input))",
+            ring: "hsl(var(--ring))",
+            background: "hsl(var(--background))",
+            foreground: "hsl(var(--foreground))",
+            primary: {
+              DEFAULT: "hsl(var(--primary))",
+              foreground: "hsl(var(--primary-foreground))",
+            },
+            secondary: {
+              DEFAULT: "hsl(var(--secondary))",
+              foreground: "hsl(var(--secondary-foreground))",
+            },
+            destructive: {
+              DEFAULT: "hsl(var(--destructive))",
+              foreground: "hsl(var(--destructive-foreground))",
+            },
+            muted: {
+              DEFAULT: "hsl(var(--muted))",
+              foreground: "hsl(var(--muted-foreground))",
+            },
+            accent: {
+              DEFAULT: "hsl(var(--accent))",
+              foreground: "hsl(var(--accent-foreground))",
+            },
+            popover: {
+              DEFAULT: "hsl(var(--popover))",
+              foreground: "hsl(var(--popover-foreground))",
+            },
+            card: {
+              DEFAULT: "hsl(var(--card))",
+              foreground: "hsl(var(--card-foreground))",
+            },
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    :root {
+      --background: 0 0% 100%;
+      --foreground: 222.2 84% 4.9%;
+      --card: 0 0% 100%;
+      --card-foreground: 222.2 84% 4.9%;
+      --popover: 0 0% 100%;
+      --popover-foreground: 222.2 84% 4.9%;
+      --primary: 222.2 47.4% 11.2%;
+      --primary-foreground: 210 40% 98%;
+      --secondary: 210 40% 96.1%;
+      --secondary-foreground: 222.2 47.4% 11.2%;
+      --muted: 210 40% 96.1%;
+      --muted-foreground: 215.4 16.3% 46.9%;
+      --accent: 210 40% 96.1%;
+      --accent-foreground: 222.2 47.4% 11.2%;
+      --destructive: 0 84.2% 60.2%;
+      --destructive-foreground: 210 40% 98%;
+      --border: 214.3 31.8% 91.4%;
+      --input: 214.3 31.8% 91.4%;
+      --ring: 222.2 84% 4.9%;
+    }
 
-  <meta name="title" content="Filipe de Leonel Batista - Desenvolvedor de software" />
+    .dark {
+      --background: 222.2 84% 4.9%;
+      --foreground: 210 40% 98%;
+      --card: 222.2 84% 4.9%;
+      --card-foreground: 210 40% 98%;
+      --popover: 222.2 84% 4.9%;
+      --popover-foreground: 210 40% 98%;
+      --primary: 210 40% 98%;
+      --primary-foreground: 222.2 47.4% 11.2%;
+      --secondary: 217.2 32.6% 17.5%;
+      --secondary-foreground: 210 40% 98%;
+      --muted: 217.2 32.6% 17.5%;
+      --muted-foreground: 215 20.2% 65.1%;
+      --accent: 217.2 32.6% 17.5%;
+      --accent-foreground: 210 40% 98%;
+      --destructive: 0 62.8% 30.6%;
+      --destructive-foreground: 210 40% 98%;
+      --border: 217.2 32.6% 17.5%;
+      --input: 217.2 32.6% 17.5%;
+      --ring: 212.7 26.8% 83.9%;
+    }
+  </style>
+  <title>Filipe Batista | Desenvolvedor Full Stack React, Node.js & React Native</title>
   <meta name="description"
-    content="Desenvolvedor de software com mais de 5 anos de experiência em desenvolvimento web e mobile para Android ou IOS. Vamos tirar sua idéia do papel." />
-  <link rel="canonical" href="https://filipeleonelbatista.dev.br" />
+    content="Desenvolvedor Full Stack com +5 anos de experiência em React, Node.js, React Native e TypeScript. Especialista em desenvolvimento web e mobile, APIs REST, e integrações com IA. Projetos: Resume AI CV, MINHAS FINANÇAS$, Cadastrapet." />
+  <link rel="canonical" href="https://filipeleonelbatista.github.io" />
   <meta name="author" content="Filipe de Leonel Batista - Desenvolvedor de software" />
   <meta name="robots" content="index" />
 
-  <meta itemprop="name" content="Filipe de Leonel Batista - Desenvolvedor de software" />
-  <meta itemprop="description"
-    content="Desenvolvedor de software com mais de 5 anos de experiência em desenvolvimento web e mobile para Android ou IOS. Vamos tirar sua idéia do papel." />
-  <meta itemprop="image" content="/banner.png" />
-
-  <meta property="og:title" content="Filipe de Leonel Batista - Desenvolvedor de software" />
+  <!-- Updated Social Meta Tags -->
+  <meta property="og:title" content="Filipe Batista | Desenvolvedor Full Stack React, Node.js & React Native" />
   <meta property="og:description"
-    content="Desenvolvedor de software com mais de 5 anos de experiência em desenvolvimento web e mobile para Android ou IOS. Vamos tirar sua idéia do papel." />
-  <meta property="og:url" content=https://filipeleonelbatista.dev.br />
+    content="Desenvolvedor Full Stack com +5 anos de experiência em React, Node.js, React Native e TypeScript. Projetos destacados em IA, finanças e healthtech." />
+  <meta property="og:url" content=https://filipeleonelbatista.github.io />
   <meta property="og:site_name" content="Filipe de Leonel Batista - Desenvolvedor de software" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="/banner.png" />
@@ -34,25 +113,217 @@
   <meta name="twitter:title" content="Filipe de Leonel Batista - Desenvolvedor de software" />
   <meta name="twitter:description"
     content="Desenvolvedor de software com mais de 5 anos de experiência em desenvolvimento web e mobile para Android ou IOS. Vamos tirar sua idéia do papel." />
-  <meta name="twitter:url" content=https://filipeleonelbatista.dev.br />
+  <meta name="twitter:url" content=https://filipeleonelbatista.github.io />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="/banner.png" />
+
+  <link rel="shortcut icon" href="icon.png" type="image/png">
+
+  <style>
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+      /* Firefox */
+    }
+
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+      /* Chrome, Safari and Opera */
+    }
+  </style>
+
+  <!-- Schema.org markup for Google+ -->
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Person",
+    "name": "Filipe de Leonel Batista",
+    "jobTitle": "Desenvolvedor Full Stack",
+    "url": "https://filipeleonelbatista.github.io",
+    "sameAs": [
+      "https://linkedin.com/in/filipeleonelbatista",
+      "https://github.com/filipeleonelbatista"
+    ],
+    "skills": ["React", "Node.js", "React Native", "TypeScript", "REST APIs", "Firebase", "Next.js"],
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "BYU Idaho"
+    }
+  }
+  </script>
 </head>
 
-<body>
-  <div class="bg-zinc-950 space-y-6 flex flex-col items-center justify-center w-full h-screen">
-    <h2 class="text-4xl text-white font-bold max-w-[420px] text-center">Redirecionando...</h2>
+<body class="min-h-screen bg-background text-foreground">
+  <div class="container mx-auto px-4 py-8 md:max-w-2xl">
+    <!-- Botão de Tema -->
+    <div class="flex justify-end mb-8">
+      <button id="theme-toggle" class="p-2 rounded-lg bg-secondary hover:bg-accent">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path class="sun-icon hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+          <path class="moon-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+        </svg>
+      </button>
+    </div>
 
-    <a href="https://filipeleonelbatista.dev.br/" target="_blank" rel="noreferer noopener"
-      class="text-purple-400 underline text-md text-center">Filipe Batista | Desenvolvedor de software</a>
+    <!-- Foto de Perfil -->
+    <a href="https://linkedin.com/in/filipeleonelbatista" target="_blank" class="cursor-pointer flex flex-col items-center mb-8">
+      <img src="https://github.com/filipeleonelbatista.png" alt="Filipe de Leonel Batista"
+        class="w-32 h-32 rounded-full object-cover border-4 border-primary">
+      <h1 class="mt-4 text-2xl font-bold">Filipe de Leonel Batista</h1>
+      <p class="mt-2 text-muted-foreground text-center max-w-md">
+        Desenvolvedor Full Stack com +5 anos de experiência em React, Node.js, React Native e TypeScript.
+        Especialista em desenvolvimento web, mobile e integrações com IA.
+      </p>
+    </a>
+
+    <!-- Links de Destaque -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+      <a href="https://github.com/filipeleonelbatista" class="p-4 rounded-lg bg-card hover:bg-accent transition-colors">
+        <h3 class="font-semibold">Portfólio</h3>
+        <p class="text-sm text-muted-foreground">Conheça meus projetos</p>
+      </a>
+      <a href="https://linkedin.com/in/filipeleonelbatista"
+        class="p-4 rounded-lg bg-card hover:bg-accent transition-colors">
+        <h3 class="font-semibold">Linkedin</h3>
+        <p class="text-sm text-muted-foreground">Postagens sobre desenvolvimento</p>
+      </a>
+      <a href="https://wa.me/+5551992736445" class="p-4 rounded-lg bg-card hover:bg-accent transition-colors">
+        <h3 class="font-semibold">Contato</h3>
+        <p class="text-sm text-muted-foreground">Entre em contato</p>
+      </a>
+    </div>
+
+    <!-- Botões de Link -->
+    <div class="space-y-4 mb-8">
+      <a href="./Curriculo.pdf" download="Curriculo.pdf"
+        class="block w-full p-4 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors text-center">
+        Curriculo
+      </a>
+      <a href="https://linkedin.com/in/filipeleonelbatista"
+        class="block w-full p-4 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors text-center">
+        LinkedIn
+      </a>
+      <a href="https://github.com/filipeleonelbatista"
+        class="block w-full p-4 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors text-center">
+        GitHub
+      </a>
+      <a href="mailto:filipe.x2016@gmail.com"
+        class="block w-full p-4 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors text-center">
+        Email
+      </a>
+    </div>
+
+    <!-- Projetos -->
+    <div class="mb-8">
+      <h2 class="text-2xl font-bold mb-4">Projetos em Destaque</h2>
+      <div class="relative">
+        <div class="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-4 -mx-4 px-4 scrollbar-hide">
+          <div class="border rounded-md flex-none w-full md:w-[400px] snap-center">
+            <div class="bg-card rounded-lg overflow-hidden">
+              <img src="./images/resume-ia.png" alt="Resume AI CV" class="w-full h-48 object-cover" />
+              <div class="p-4">
+                <h3 class="font-bold text-lg mb-2">Resume AI CV</h3>
+                <p class="text-muted-foreground text-sm mb-4">
+                  Análise e geração de currículos inteligentes usando IA para maximizar match com vagas.
+                </p>
+                <a href="https://resume-ai-cv.vercel.app/" target="_blank"
+                  class="inline-flex items-center px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors">
+                  Ver projeto
+                  <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="border rounded-md flex-none w-full md:w-[400px] snap-center">
+            <div class="bg-card rounded-lg overflow-hidden">
+              <img src="./images/minhas-financas.png" alt="MINHAS FINANÇAS$" class="w-full h-48 object-cover" />
+              <div class="p-4">
+                <h3 class="font-bold text-lg mb-2">MINHAS FINANÇAS$</h3>
+                <p class="text-muted-foreground text-sm mb-4">
+                  Controle financeiro familiar com gestão de despesas e análise por IA.
+                </p>
+                <a href="https://minhasfinancas.vercel.app/" target="_blank"
+                  class="inline-flex items-center px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors">
+                  Ver projeto
+                  <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="border rounded-md flex-none w-full md:w-[400px] snap-center">
+            <div class="bg-card rounded-lg overflow-hidden">
+              <img src="./images/enviodemensagens.png" alt="enviodemensagensemmassa" class="w-full h-48 object-cover" />
+              <div class="p-4">
+                <h3 class="font-bold text-lg mb-2">WhatsApp Sender</h3>
+                <p class="text-muted-foreground text-sm mb-4">
+                  Envio de mensagens em massa para WhatsApp automatizado com respostas por IA.
+                </p>
+                <a href="https://enviodemensagensemmassa.vercel.app" target="_blank"
+                  class="inline-flex items-center px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors">
+                  Ver projeto
+                  <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Video do YouTube -->
+    <div class="aspect-video mb-8">
+      <iframe class="w-full h-full rounded-lg" src="https://www.youtube.com/embed/z3sr1HTVSFI" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="text-center text-muted-foreground">
+      <p>© <span id="currentYear"></span> Filipe de Leonel Batista. Todos os direitos reservados.</p>
+    </footer>
   </div>
 
   <script>
-    window.onload = () => {
-      setTimeout(() => {
-        window.open("https://filipeleonelbatista.dev.br", "_self")
-      }, 1500)
+    // Toggle de tema
+    const themeToggle = document.getElementById('theme-toggle');
+    const html = document.documentElement;
+    const sunIcon = themeToggle.querySelector('.sun-icon');
+    const moonIcon = themeToggle.querySelector('.moon-icon');
+
+    function updateThemeIcon() {
+      if (html.classList.contains('dark')) {
+        sunIcon.classList.remove('hidden');
+        moonIcon.classList.add('hidden');
+      } else {
+        sunIcon.classList.add('hidden');
+        moonIcon.classList.remove('hidden');
+      }
     }
+
+    themeToggle.addEventListener('click', () => {
+      html.classList.toggle('dark');
+      updateThemeIcon();
+    });
+
+    // Inicializar ícones
+    updateThemeIcon();
+
+    // Atualizar ano no footer
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
   </script>
 </body>
 
