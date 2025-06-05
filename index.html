@@ -156,8 +156,14 @@
 
 <body class="min-h-screen bg-background text-foreground">
   <div class="container mx-auto px-4 py-8 md:max-w-2xl">
-    <!-- Botão de Tema -->
-    <div class="flex justify-end mb-8">
+    <!-- Botões de Tema e Idioma -->
+    <div class="flex justify-end mb-8 gap-2">
+      <button id="lang-toggle" class="p-2 rounded-lg bg-secondary hover:bg-accent">
+        <span class="font-semibold">
+          <span class="pt-text">BR</span>
+          <span class="en-text hidden">EN</span>
+        </span>
+      </button>
       <button id="theme-toggle" class="p-2 rounded-lg bg-secondary hover:bg-accent">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path class="sun-icon hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -169,7 +175,8 @@
     </div>
 
     <!-- Foto de Perfil -->
-    <a href="https://linkedin.com/in/filipeleonelbatista" target="_blank" class="cursor-pointer flex flex-col items-center mb-8">
+    <a href="https://linkedin.com/in/filipeleonelbatista" target="_blank"
+      class="cursor-pointer flex flex-col items-center mb-8">
       <img src="https://github.com/filipeleonelbatista.png" alt="Filipe de Leonel Batista"
         class="w-32 h-32 rounded-full object-cover border-4 border-primary">
       <h1 class="mt-4 text-2xl font-bold">Filipe de Leonel Batista</h1>
@@ -198,19 +205,19 @@
 
     <!-- Botões de Link -->
     <div class="space-y-4 mb-8">
-      <a href="./Curriculo.pdf" download="Curriculo.pdf"
+      <a href="./Curriculo.pdf" download="Curriculo.pdf" id="resume-button"
         class="block w-full p-4 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors text-center">
         Curriculo
       </a>
-      <a href="https://linkedin.com/in/filipeleonelbatista"
+      <a href="https://linkedin.com/in/filipeleonelbatista" id="linkedin-button"
         class="block w-full p-4 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors text-center">
         LinkedIn
       </a>
-      <a href="https://github.com/filipeleonelbatista"
+      <a href="https://github.com/filipeleonelbatista" id="github-button"
         class="block w-full p-4 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors text-center">
         GitHub
       </a>
-      <a href="mailto:filipe.x2016@gmail.com"
+      <a href="mailto:filipe.x2016@gmail.com" id="email-button"
         class="block w-full p-4 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors text-center">
         Email
       </a>
@@ -286,6 +293,7 @@
 
     <!-- Video do YouTube -->
     <div class="aspect-video mb-8">
+      <h2 class="text-2xl font-bold mb-4">Canal no Youtube</h2>
       <iframe class="w-full h-full rounded-lg" src="https://www.youtube.com/embed/z3sr1HTVSFI" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
@@ -324,6 +332,211 @@
 
     // Atualizar ano no footer
     document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+    // Translations object
+    const translations = {
+      pt: {
+        title: "Filipe de Leonel Batista",
+        subtitle: "Desenvolvedor Full Stack com +5 anos de experiência em React, Node.js, React Native e TypeScript. Especialista em desenvolvimento web, mobile e integrações com IA.",
+        links: {
+          portfolio: {
+            title: "Portfólio",
+            description: "Conheça meus projetos",
+            url: "https://github.com/filipeleonelbatista"
+          },
+          linkedin: {
+            title: "Linkedin",
+            description: "Postagens sobre desenvolvimento",
+            url: "https://linkedin.com/in/filipeleonelbatista"
+          },
+          contact: {
+            title: "Contato",
+            description: "Entre em contato",
+            url: "https://wa.me/+5551992736445?text=Ol%C3%A1%20Filipe%2C%0A%0AGostaria%20de%20conversar%20sobre%20um%20projeto.%20Podemos%20agendar%20uma%20reuni%C3%A3o%3F%0A%0AAtenciosamente."
+          }
+        },
+        buttons: {
+          resume: {
+            title: "Curriculo",
+            url: "./Curriculo.pdf"
+          },
+          linkedin: {
+            title: "LinkedIn", 
+            url: "https://linkedin.com/in/filipeleonelbatista"
+          },
+          github: {
+            title: "GitHub",
+            url: "https://github.com/filipeleonelbatista"
+          },
+          email: {
+            title: "Email",
+            url: "mailto:filipe.x2016@gmail.com?subject=Ol%C3%A1%20Filipe%2C%20gostaria%20de%20conversar%20sobre%20um%20projeto&body=Ol%C3%A1%20Filipe%2C%0A%0AGostaria%20de%20conversar%20sobre%20um%20projeto.%20Podemos%20agendar%20uma%20reuni%C3%A3o%3F%0A%0AAtenciosamente%2C%0A"
+          }
+        },
+        projects: {
+          title: "Projetos em Destaque",
+          viewButton: "Ver projeto",
+          items: [
+            {
+              title: "Resume AI CV",
+              description: "Análise e geração de currículos inteligentes usando IA para maximizar match com vagas.",
+              link: "https://resume-ai-cv.vercel.app/",
+              image: "./images/resume-ia.png"
+            },
+            {
+              title: "MINHAS FINANÇAS$",
+              description: "Controle financeiro familiar com gestão de despesas e análise por IA.",
+              link: "https://minhasfinancas.vercel.app/",
+              image: "./images/minhas-financas.png"
+            },
+            {
+              title: "WhatsApp Sender",
+              description: "Envio de mensagens em massa para WhatsApp automatizado com respostas por IA.",
+              link: "https://enviodemensagensemmassa.vercel.app",
+              image: "./images/enviodemensagens.png"
+            }
+          ]
+        },
+        youtube: "Canal no Youtube",
+        footer: "Todos os direitos reservados."
+      },
+      en: {
+        title: "Filipe de Leonel Batista",
+        subtitle: "Full Stack Developer with +5 years of experience in React, Node.js, React Native, and TypeScript. Specialist in web development, mobile, and AI integrations.",
+        links: {
+          portfolio: {
+            title: "Portfolio",
+            description: "See my projects",
+            url: "https://github.com/filipeleonelbatista"
+          },
+          linkedin: {
+            title: "Linkedin",
+            description: "Development posts",
+            url: "https://www.linkedin.com/in/filipeleonelbatista/?locale=en_US"
+          },
+          contact: {
+            title: "Contact",
+            description: "Get in touch",
+            url: "https://wa.me/+5551992736445?text=Hi%20Filipe%2C%0A%0AI%20would%20like%20to%20discuss%20a%20project%20with%20you.%20Can%20we%20schedule%20a%20meeting%3F%0A%0ABest%20regards."
+          }
+        },
+        buttons: {
+          resume: {
+            title: "Resume",
+            url: "./Resume.pdf"
+          },
+          linkedin: {
+            title: "LinkedIn",
+            url: "https://www.linkedin.com/in/filipeleonelbatista/?locale=en_US"
+          },
+          github: {
+            title: "GitHub", 
+            url: "https://github.com/filipeleonelbatista"
+          },
+          email: {
+            title: "Email",
+            url: "mailto:filipe.x2016@gmail.com?subject=Hi%20Filipe%2C%20I%20would%20like%20to%20discuss%20a%20project&body=Hi%20Filipe%2C%0A%0AI%20would%20like%20to%20discuss%20a%20project%20with%20you.%20Can%20we%20schedule%20a%20meeting%3F%0A%0ABest%20regards%2C%0A"
+          }
+        },
+        projects: {
+          title: "Featured Projects",
+          viewButton: "View project",
+          items: [
+            {
+              title: "Resume AI CV",
+              description: "AI-powered resume analysis and generation to maximize job matching.",
+              link: "https://resume-ai-cv.vercel.app/",
+              image: "./images/resume-ia.png"
+            },
+            {
+              title: "MY FINANCES$",
+              description: "Family financial control with expense management and AI analysis.",
+              link: "https://minhasfinancas.vercel.app/",
+              image: "./images/minhas-financas.png"
+            },
+            {
+              title: "WhatsApp Sender",
+              description: "Automated mass WhatsApp messaging with AI responses.",
+              link: "https://enviodemensagensemmassa.vercel.app",
+              image: "./images/enviodemensagens.png"
+            }
+          ]
+        },
+        youtube: "YouTube Channel",
+        footer: "All rights reserved."
+      }
+    };
+
+    // Language toggle functionality
+    const langToggle = document.getElementById('lang-toggle');
+    const ptText = document.querySelector('.pt-text');
+    const enText = document.querySelector('.en-text');
+    let currentLang = 'pt';
+
+    function updateLanguage(lang) {
+      currentLang = lang;
+      const t = translations[lang];
+
+      // Update text content
+      document.querySelector('h1').textContent = t.title;
+      document.querySelector('h1 + p').textContent = t.subtitle;
+
+      // Update featured links
+      const featuredLinks = document.querySelectorAll('.grid.grid-cols-1.md\\:grid-cols-3 a');
+      Object.values(t.links).forEach((link, index) => {
+        const elem = featuredLinks[index];
+        elem.querySelector('h3').textContent = link.title;
+        elem.querySelector('p').textContent = link.description;
+        elem.href = link.url; // Adicionar esta linha para atualizar o URL
+      });
+
+      // Update buttons
+      const buttons = t.buttons;
+      Object.entries(buttons).forEach(([key, value]) => {
+        const button = document.getElementById(`${key}-button`);
+        if (button) {
+          button.textContent = value.title;
+          button.href = value.url;
+          if (key === 'resume') {
+            button.download = 'Resume.pdf';
+          }
+        }
+      });
+
+      // Update projects
+      document.querySelector('.mb-8 h2').textContent = t.projects.title;
+      const projectCards = document.querySelectorAll('.snap-center');
+      t.projects.items.forEach((project, index) => {
+        const card = projectCards[index];
+        card.querySelector('h3').textContent = project.title;
+        card.querySelector('p').textContent = project.description;
+        // Adicionar esta linha para atualizar o texto do botão
+        card.querySelector('a').textContent = t.projects.viewButton;
+      });
+
+      // Update YouTube section title
+      document.querySelector('.aspect-video h2').textContent = t.youtube;
+
+      // Update footer
+      document.querySelector('footer p').innerHTML = `© <span id="currentYear">${new Date().getFullYear()}</span> Filipe de Leonel Batista. ${t.footer}`;
+
+      // Update language toggle button
+      if (lang === 'pt') {
+        ptText.classList.remove('hidden');
+        enText.classList.add('hidden');
+      } else {
+        ptText.classList.add('hidden');
+        enText.classList.remove('hidden');
+      }
+    }
+
+    langToggle.addEventListener('click', () => {
+      const newLang = currentLang === 'pt' ? 'en' : 'pt';
+      updateLanguage(newLang);
+    });
+
+    // Initialize with Portuguese
+    updateLanguage('pt');
   </script>
 </body>
 

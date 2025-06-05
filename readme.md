@@ -1,3 +1,5 @@
+[🇺🇸 See in English](./readme_en.md)
+
 <h1 align="left">👋 Olá, eu sou Filipe de Leonel Batista</h1>
 
 <p align="left">
