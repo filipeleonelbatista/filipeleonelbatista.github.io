@@ -51,6 +51,14 @@ function updateLanguage(lang) {
             }
         }
     });
+
+    // Atualiza os hrefs dos links com data-i18n-href
+    document.querySelectorAll('[data-i18n-href]').forEach(element => {
+        const hrefKey = element.getAttribute('data-i18n-href');
+        if (t[hrefKey]) {
+            element.setAttribute('href', t[hrefKey]);
+        }
+    });
 }
 
 function init() {
