@@ -124,7 +124,7 @@
     </div>
 
     <!-- Foto de Perfil -->
-    <a href="https://linkedin.com/in/filipeleonelbatista" target="_blank"
+    <a href="https://linkedin.com/in/filipeleonelbatista" data-i18n-href="linkedin-url" target="_blank"
       class="cursor-pointer flex flex-col items-center mb-8">
       <img src="https://github.com/filipeleonelbatista.png" alt="Filipe de Leonel Batista"
         class="w-32 h-32 rounded-full object-cover border-4 border-primary">
@@ -137,11 +137,12 @@
 
     <!-- Links de Destaque -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-      <a href="https://github.com/filipeleonelbatista" class="p-4 rounded-lg bg-card hover:bg-accent transition-colors">
+      <a href="https://github.com/filipeleonelbatista" data-i18n-href="github-url"
+        class="p-4 rounded-lg bg-card hover:bg-accent transition-colors">
         <h3 class="font-semibold" data-i18n="portfolio">Portfólio</h3>
         <p class="text-sm text-muted-foreground" data-i18n="portfolio-description">Conheça meus projetos</p>
       </a>
-      <a href="https://linkedin.com/in/filipeleonelbatista"
+      <a href="https://linkedin.com/in/filipeleonelbatista" data-i18n-href="linkedin-url"
         class="p-4 rounded-lg bg-card hover:bg-accent transition-colors">
         <h3 class="font-semibold" data-i18n="linkedin">Linkedin</h3>
         <p class="text-sm text-muted-foreground" data-i18n="linkedin-description">Postagens sobre desenvolvimento</p>
@@ -157,25 +158,22 @@
     <div class="space-y-4 mb-8">
       <a href="https://linkedin.com/in/filipeleonelbatista" id="linkedin-button"
         class="block w-full p-4 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors text-center"
-        data-i18n="linkedin"
-        data-i18n-href="linkedin-url">
+        data-i18n="linkedin" data-i18n-href="linkedin-url">
         LinkedIn
       </a>
       <a href="https://github.com/filipeleonelbatista" id="github-button"
         class="block w-full p-4 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors text-center"
-        data-i18n="github">
+        data-i18n="github" data-i18n-href="github-url">
         GitHub
       </a>
       <a href="mailto:filipe.x2016@gmail.com" id="email-button"
         class="block w-full p-4 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors text-center"
-        data-i18n="email"
-        data-i18n-href="email-url">
+        data-i18n="email" data-i18n-href="email-url">
         Email
       </a>
       <a href="./Curriculo.pdf" download="Curriculo.pdf" id="resume-button"
         class="block w-full p-4 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors text-center"
-        data-i18n="download-resume"
-        data-i18n-href="curriculo-url">
+        data-i18n="download-resume" data-i18n-href="curriculo-url">
         Currículo
       </a>
     </div>
@@ -260,7 +258,10 @@
 
     <!-- Rodapé -->
     <footer class="text-center text-muted-foreground">
-      <p data-i18n="footer">© <span id="currentYear"></span> Filipe de Leonel Batista. Todos os direitos reservados.</p>
+      <div class="flex gap-2 justify-center items-center">
+        © <span id="currentYear"></span>
+        <p data-i18n="footer"> Filipe de Leonel Batista. Todos os direitos reservados.</p>
+      </div>
     </footer>
   </div>
 
