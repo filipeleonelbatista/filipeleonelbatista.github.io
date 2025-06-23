@@ -4,7 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Configuração do Tailwind -->
   <script>
     tailwind.config = {
       darkMode: 'class',
@@ -49,51 +52,11 @@
       },
     }
   </script>
-  <style>
-    :root {
-      --background: 0 0% 100%;
-      --foreground: 222.2 84% 4.9%;
-      --card: 0 0% 100%;
-      --card-foreground: 222.2 84% 4.9%;
-      --popover: 0 0% 100%;
-      --popover-foreground: 222.2 84% 4.9%;
-      --primary: 222.2 47.4% 11.2%;
-      --primary-foreground: 210 40% 98%;
-      --secondary: 210 40% 96.1%;
-      --secondary-foreground: 222.2 47.4% 11.2%;
-      --muted: 210 40% 96.1%;
-      --muted-foreground: 215.4 16.3% 46.9%;
-      --accent: 210 40% 96.1%;
-      --accent-foreground: 222.2 47.4% 11.2%;
-      --destructive: 0 84.2% 60.2%;
-      --destructive-foreground: 210 40% 98%;
-      --border: 214.3 31.8% 91.4%;
-      --input: 214.3 31.8% 91.4%;
-      --ring: 222.2 84% 4.9%;
-    }
 
-    .dark {
-      --background: 222.2 84% 4.9%;
-      --foreground: 210 40% 98%;
-      --card: 222.2 84% 4.9%;
-      --card-foreground: 210 40% 98%;
-      --popover: 222.2 84% 4.9%;
-      --popover-foreground: 210 40% 98%;
-      --primary: 210 40% 98%;
-      --primary-foreground: 222.2 47.4% 11.2%;
-      --secondary: 217.2 32.6% 17.5%;
-      --secondary-foreground: 210 40% 98%;
-      --muted: 217.2 32.6% 17.5%;
-      --muted-foreground: 215 20.2% 65.1%;
-      --accent: 217.2 32.6% 17.5%;
-      --accent-foreground: 210 40% 98%;
-      --destructive: 0 62.8% 30.6%;
-      --destructive-foreground: 210 40% 98%;
-      --border: 217.2 32.6% 17.5%;
-      --input: 217.2 32.6% 17.5%;
-      --ring: 212.7 26.8% 83.9%;
-    }
-  </style>
+  <!-- CSS customizado -->
+  <link rel="stylesheet" href="assets/css/themes.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
   <title>Filipe Batista | Desenvolvedor Full Stack React, Node.js & React Native</title>
   <meta name="description"
     content="Desenvolvedor Full Stack com +5 anos de experiência em React, Node.js, React Native e TypeScript. Especialista em desenvolvimento web e mobile, APIs REST, e integrações com IA. Projetos: Resume AI CV, MINHAS FINANÇAS$, Cadastrapet." />
@@ -108,30 +71,16 @@
   <meta property="og:url" content=https://filipeleonelbatista.github.io />
   <meta property="og:site_name" content="Filipe de Leonel Batista - Desenvolvedor de software" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="/banner.png" />
+  <meta property="og:image" content="assets/images/banner.png" />
 
   <meta name="twitter:title" content="Filipe de Leonel Batista - Desenvolvedor de software" />
   <meta name="twitter:description"
     content="Desenvolvedor de software com mais de 5 anos de experiência em desenvolvimento web e mobile para Android ou IOS. Vamos tirar sua idéia do papel." />
   <meta name="twitter:url" content=https://filipeleonelbatista.github.io />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image" content="/banner.png" />
+  <meta name="twitter:image" content="assets/images/banner.png" />
 
-  <link rel="shortcut icon" href="icon.png" type="image/png">
-
-  <style>
-    .scrollbar-hide {
-      -ms-overflow-style: none;
-      /* IE and Edge */
-      scrollbar-width: none;
-      /* Firefox */
-    }
-
-    .scrollbar-hide::-webkit-scrollbar {
-      display: none;
-      /* Chrome, Safari and Opera */
-    }
-  </style>
+  <link rel="shortcut icon" href="assets/images/icon.png" type="image/png">
 
   <!-- Schema.org markup for Google+ -->
   <script type="application/ld+json">
@@ -179,8 +128,8 @@
       class="cursor-pointer flex flex-col items-center mb-8">
       <img src="https://github.com/filipeleonelbatista.png" alt="Filipe de Leonel Batista"
         class="w-32 h-32 rounded-full object-cover border-4 border-primary">
-      <h1 class="mt-4 text-2xl font-bold">Filipe de Leonel Batista</h1>
-      <p class="mt-2 text-muted-foreground text-center max-w-md">
+      <h1 class="mt-4 text-2xl font-bold" data-i18n="profile-title">Filipe de Leonel Batista</h1>
+      <p class="mt-2 text-muted-foreground text-center max-w-md" data-i18n="profile-description">
         Desenvolvedor Full Stack com +5 anos de experiência em React, Node.js, React Native e TypeScript.
         Especialista em desenvolvimento web, mobile e integrações com IA.
       </p>
@@ -189,96 +138,102 @@
     <!-- Links de Destaque -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
       <a href="https://github.com/filipeleonelbatista" class="p-4 rounded-lg bg-card hover:bg-accent transition-colors">
-        <h3 class="font-semibold">Portfólio</h3>
-        <p class="text-sm text-muted-foreground">Conheça meus projetos</p>
+        <h3 class="font-semibold" data-i18n="portfolio">Portfólio</h3>
+        <p class="text-sm text-muted-foreground" data-i18n="portfolio-description">Conheça meus projetos</p>
       </a>
       <a href="https://linkedin.com/in/filipeleonelbatista"
         class="p-4 rounded-lg bg-card hover:bg-accent transition-colors">
-        <h3 class="font-semibold">Linkedin</h3>
-        <p class="text-sm text-muted-foreground">Postagens sobre desenvolvimento</p>
+        <h3 class="font-semibold" data-i18n="linkedin">Linkedin</h3>
+        <p class="text-sm text-muted-foreground" data-i18n="linkedin-description">Postagens sobre desenvolvimento</p>
       </a>
-      <a href="https://wa.me/+5551992736445" class="p-4 rounded-lg bg-card hover:bg-accent transition-colors">
-        <h3 class="font-semibold">Contato</h3>
-        <p class="text-sm text-muted-foreground">Entre em contato</p>
+      <a href="#" download="Curriculo.pdf" class="p-4 rounded-lg bg-card hover:bg-accent transition-colors">
+        <h3 class="font-semibold" data-i18n="download-resume">Currículo</h3>
+        <p class="text-sm text-muted-foreground" data-i18n="download-resume-description">Download em PDF</p>
       </a>
     </div>
 
     <!-- Botões de Link -->
     <div class="space-y-4 mb-8">
       <a href="./Curriculo.pdf" download="Curriculo.pdf" id="resume-button"
-        class="block w-full p-4 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors text-center">
-        Curriculo
+        class="block w-full p-4 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors text-center"
+        data-i18n="download-resume">
+        Currículo
       </a>
       <a href="https://linkedin.com/in/filipeleonelbatista" id="linkedin-button"
-        class="block w-full p-4 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors text-center">
+        class="block w-full p-4 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors text-center"
+        data-i18n="linkedin">
         LinkedIn
       </a>
       <a href="https://github.com/filipeleonelbatista" id="github-button"
-        class="block w-full p-4 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors text-center">
+        class="block w-full p-4 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors text-center"
+        data-i18n="github">
         GitHub
       </a>
       <a href="mailto:filipe.x2016@gmail.com" id="email-button"
-        class="block w-full p-4 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors text-center">
+        class="block w-full p-4 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-colors text-center"
+        data-i18n="email">
         Email
       </a>
     </div>
 
     <!-- Projetos -->
     <div class="mb-8">
-      <h2 class="text-2xl font-bold mb-4">Projetos em Destaque</h2>
+      <h2 class="text-2xl font-bold mb-4" data-i18n="highlights">Projetos em Destaque</h2>
       <div class="relative">
         <div class="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-4 -mx-4 px-4 scrollbar-hide">
-          <div class="border rounded-md flex-none w-full md:w-[400px] snap-center">
-            <div class="bg-card rounded-lg overflow-hidden">
-              <img src="./images/resume-ia.png" alt="Resume AI CV" class="w-full h-48 object-cover" />
-              <div class="p-4">
-                <h3 class="font-bold text-lg mb-2">Resume AI CV</h3>
-                <p class="text-muted-foreground text-sm mb-4">
-                  Análise e geração de currículos inteligentes usando IA para maximizar match com vagas.
-                </p>
-                <a href="https://resume-ai-cv.vercel.app/" target="_blank"
-                  class="inline-flex items-center px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors">
-                  Ver projeto
-                  <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
 
           <div class="border rounded-md flex-none w-full md:w-[400px] snap-center">
             <div class="bg-card rounded-lg overflow-hidden">
-              <img src="./images/minhas-financas.png" alt="MINHAS FINANÇAS$" class="w-full h-48 object-cover" />
+              <img src="./assets/images/enviodemensagens.png" alt="enviodemensagensemmassa"
+                class="w-full h-48 object-cover" />
               <div class="p-4">
-                <h3 class="font-bold text-lg mb-2">MINHAS FINANÇAS$</h3>
-                <p class="text-muted-foreground text-sm mb-4">
-                  Controle financeiro familiar com gestão de despesas e análise por IA.
-                </p>
-                <a href="https://minhasfinancas.vercel.app/" target="_blank"
-                  class="inline-flex items-center px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors">
-                  Ver projeto
-                  <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="border rounded-md flex-none w-full md:w-[400px] snap-center">
-            <div class="bg-card rounded-lg overflow-hidden">
-              <img src="./images/enviodemensagens.png" alt="enviodemensagensemmassa" class="w-full h-48 object-cover" />
-              <div class="p-4">
-                <h3 class="font-bold text-lg mb-2">WhatsApp Sender</h3>
-                <p class="text-muted-foreground text-sm mb-4">
+                <h3 class="font-bold text-lg mb-2" data-i18n="messages">WhatsApp Sender</h3>
+                <p class="text-muted-foreground text-sm mb-4" data-i18n="messages-description">
                   Envio de mensagens em massa para WhatsApp automatizado com respostas por IA.
                 </p>
                 <a href="https://enviodemensagensemmassa.vercel.app" target="_blank"
                   class="inline-flex items-center px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors">
-                  Ver projeto
+                  <span data-i18n="view-project">Ver projeto</span>
+                  <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="border rounded-md flex-none w-full md:w-[400px] snap-center">
+            <div class="bg-card rounded-lg overflow-hidden">
+              <img src="./assets/images/resume-ia.png" alt="Resume AI CV" class="w-full h-48 object-cover" />
+              <div class="p-4">
+                <h3 class="font-bold text-lg mb-2" data-i18n="resume-ai">Resume AI CV</h3>
+                <p class="text-muted-foreground text-sm mb-4" data-i18n="resume-ai-description">
+                  Análise e geração de currículos inteligentes usando IA para maximizar match com vagas.
+                </p>
+                <a href="https://resume-ai-cv.vercel.app/" target="_blank"
+                  class="inline-flex items-center px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors">
+                  <span data-i18n="view-project">Ver projeto</span>
+                  <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="border rounded-md flex-none w-full md:w-[400px] snap-center">
+            <div class="bg-card rounded-lg overflow-hidden">
+              <img src="./assets/images/minhas-financas.png" alt="MINHAS FINANÇAS$" class="w-full h-48 object-cover" />
+              <div class="p-4">
+                <h3 class="font-bold text-lg mb-2" data-i18n="finances">MINHAS FINANÇAS$</h3>
+                <p class="text-muted-foreground text-sm mb-4" data-i18n="finances-description">
+                  Controle financeiro familiar com gestão de despesas e análise por IA.
+                </p>
+                <a href="https://minhasfinancas.vercel.app/" target="_blank"
+                  class="inline-flex items-center px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors">
+                  <span data-i18n="view-project">Ver projeto</span>
                   <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                       d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -293,7 +248,7 @@
 
     <!-- Video do YouTube -->
     <div class="aspect-video mb-8">
-      <h2 class="text-2xl font-bold mb-4">Canal no Youtube</h2>
+      <h2 class="text-2xl font-bold mb-4" data-i18n="youtube-title">Canal no Youtube</h2>
       <iframe class="w-full h-full rounded-lg" src="https://www.youtube.com/embed/z3sr1HTVSFI" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
@@ -301,243 +256,11 @@
 
     <!-- Rodapé -->
     <footer class="text-center text-muted-foreground">
-      <p>© <span id="currentYear"></span> Filipe de Leonel Batista. Todos os direitos reservados.</p>
+      <p data-i18n="footer">© <span id="currentYear"></span> Filipe de Leonel Batista. Todos os direitos reservados.</p>
     </footer>
   </div>
 
-  <script>
-    // Toggle de tema
-    const themeToggle = document.getElementById('theme-toggle');
-    const html = document.documentElement;
-    const sunIcon = themeToggle.querySelector('.sun-icon');
-    const moonIcon = themeToggle.querySelector('.moon-icon');
-
-    function updateThemeIcon() {
-      if (html.classList.contains('dark')) {
-        sunIcon.classList.remove('hidden');
-        moonIcon.classList.add('hidden');
-      } else {
-        sunIcon.classList.add('hidden');
-        moonIcon.classList.remove('hidden');
-      }
-    }
-
-    themeToggle.addEventListener('click', () => {
-      html.classList.toggle('dark');
-      updateThemeIcon();
-    });
-
-    // Inicializar ícones
-    updateThemeIcon();
-
-    // Atualizar ano no footer
-    document.getElementById('currentYear').textContent = new Date().getFullYear();
-
-    // Translations object
-    const translations = {
-      pt: {
-        title: "Filipe de Leonel Batista",
-        subtitle: "Desenvolvedor Full Stack com +5 anos de experiência em React, Node.js, React Native e TypeScript. Especialista em desenvolvimento web, mobile e integrações com IA.",
-        links: {
-          portfolio: {
-            title: "Portfólio",
-            description: "Conheça meus projetos",
-            url: "https://github.com/filipeleonelbatista"
-          },
-          linkedin: {
-            title: "Linkedin",
-            description: "Postagens sobre desenvolvimento",
-            url: "https://linkedin.com/in/filipeleonelbatista"
-          },
-          contact: {
-            title: "Contato",
-            description: "Entre em contato",
-            url: "https://wa.me/+5551992736445?text=Ol%C3%A1%20Filipe%2C%0A%0AGostaria%20de%20conversar%20sobre%20um%20projeto.%20Podemos%20agendar%20uma%20reuni%C3%A3o%3F%0A%0AAtenciosamente."
-          }
-        },
-        buttons: {
-          resume: {
-            title: "Curriculo",
-            url: "./Curriculo.pdf"
-          },
-          linkedin: {
-            title: "LinkedIn", 
-            url: "https://linkedin.com/in/filipeleonelbatista"
-          },
-          github: {
-            title: "GitHub",
-            url: "https://github.com/filipeleonelbatista"
-          },
-          email: {
-            title: "Email",
-            url: "mailto:filipe.x2016@gmail.com?subject=Ol%C3%A1%20Filipe%2C%20gostaria%20de%20conversar%20sobre%20um%20projeto&body=Ol%C3%A1%20Filipe%2C%0A%0AGostaria%20de%20conversar%20sobre%20um%20projeto.%20Podemos%20agendar%20uma%20reuni%C3%A3o%3F%0A%0AAtenciosamente%2C%0A"
-          }
-        },
-        projects: {
-          title: "Projetos em Destaque",
-          viewButton: "Ver projeto",
-          items: [
-            {
-              title: "Resume AI CV",
-              description: "Análise e geração de currículos inteligentes usando IA para maximizar match com vagas.",
-              link: "https://resume-ai-cv.vercel.app/",
-              image: "./images/resume-ia.png"
-            },
-            {
-              title: "MINHAS FINANÇAS$",
-              description: "Controle financeiro familiar com gestão de despesas e análise por IA.",
-              link: "https://minhasfinancas.vercel.app/",
-              image: "./images/minhas-financas.png"
-            },
-            {
-              title: "WhatsApp Sender",
-              description: "Envio de mensagens em massa para WhatsApp automatizado com respostas por IA.",
-              link: "https://enviodemensagensemmassa.vercel.app",
-              image: "./images/enviodemensagens.png"
-            }
-          ]
-        },
-        youtube: "Canal no Youtube",
-        footer: "Todos os direitos reservados."
-      },
-      en: {
-        title: "Filipe de Leonel Batista",
-        subtitle: "Full Stack Developer with +5 years of experience in React, Node.js, React Native, and TypeScript. Specialist in web development, mobile, and AI integrations.",
-        links: {
-          portfolio: {
-            title: "Portfolio",
-            description: "See my projects",
-            url: "https://github.com/filipeleonelbatista"
-          },
-          linkedin: {
-            title: "Linkedin",
-            description: "Development posts",
-            url: "https://www.linkedin.com/in/filipeleonelbatista/?locale=en_US"
-          },
-          contact: {
-            title: "Contact",
-            description: "Get in touch",
-            url: "https://wa.me/+5551992736445?text=Hi%20Filipe%2C%0A%0AI%20would%20like%20to%20discuss%20a%20project%20with%20you.%20Can%20we%20schedule%20a%20meeting%3F%0A%0ABest%20regards."
-          }
-        },
-        buttons: {
-          resume: {
-            title: "Resume",
-            url: "./Resume.pdf"
-          },
-          linkedin: {
-            title: "LinkedIn",
-            url: "https://www.linkedin.com/in/filipeleonelbatista/?locale=en_US"
-          },
-          github: {
-            title: "GitHub", 
-            url: "https://github.com/filipeleonelbatista"
-          },
-          email: {
-            title: "Email",
-            url: "mailto:filipe.x2016@gmail.com?subject=Hi%20Filipe%2C%20I%20would%20like%20to%20discuss%20a%20project&body=Hi%20Filipe%2C%0A%0AI%20would%20like%20to%20discuss%20a%20project%20with%20you.%20Can%20we%20schedule%20a%20meeting%3F%0A%0ABest%20regards%2C%0A"
-          }
-        },
-        projects: {
-          title: "Featured Projects",
-          viewButton: "View project",
-          items: [
-            {
-              title: "Resume AI CV",
-              description: "AI-powered resume analysis and generation to maximize job matching.",
-              link: "https://resume-ai-cv.vercel.app/",
-              image: "./images/resume-ia.png"
-            },
-            {
-              title: "MY FINANCES$",
-              description: "Family financial control with expense management and AI analysis.",
-              link: "https://minhasfinancas.vercel.app/",
-              image: "./images/minhas-financas.png"
-            },
-            {
-              title: "WhatsApp Sender",
-              description: "Automated mass WhatsApp messaging with AI responses.",
-              link: "https://enviodemensagensemmassa.vercel.app",
-              image: "./images/enviodemensagens.png"
-            }
-          ]
-        },
-        youtube: "YouTube Channel",
-        footer: "All rights reserved."
-      }
-    };
-
-    // Language toggle functionality
-    const langToggle = document.getElementById('lang-toggle');
-    const ptText = document.querySelector('.pt-text');
-    const enText = document.querySelector('.en-text');
-    let currentLang = 'pt';
-
-    function updateLanguage(lang) {
-      currentLang = lang;
-      const t = translations[lang];
-
-      // Update text content
-      document.querySelector('h1').textContent = t.title;
-      document.querySelector('h1 + p').textContent = t.subtitle;
-
-      // Update featured links
-      const featuredLinks = document.querySelectorAll('.grid.grid-cols-1.md\\:grid-cols-3 a');
-      Object.values(t.links).forEach((link, index) => {
-        const elem = featuredLinks[index];
-        elem.querySelector('h3').textContent = link.title;
-        elem.querySelector('p').textContent = link.description;
-        elem.href = link.url; // Adicionar esta linha para atualizar o URL
-      });
-
-      // Update buttons
-      const buttons = t.buttons;
-      Object.entries(buttons).forEach(([key, value]) => {
-        const button = document.getElementById(`${key}-button`);
-        if (button) {
-          button.textContent = value.title;
-          button.href = value.url;
-          if (key === 'resume') {
-            button.download = 'Resume.pdf';
-          }
-        }
-      });
-
-      // Update projects
-      document.querySelector('.mb-8 h2').textContent = t.projects.title;
-      const projectCards = document.querySelectorAll('.snap-center');
-      t.projects.items.forEach((project, index) => {
-        const card = projectCards[index];
-        card.querySelector('h3').textContent = project.title;
-        card.querySelector('p').textContent = project.description;
-        // Adicionar esta linha para atualizar o texto do botão
-        card.querySelector('a').textContent = t.projects.viewButton;
-      });
-
-      // Update YouTube section title
-      document.querySelector('.aspect-video h2').textContent = t.youtube;
-
-      // Update footer
-      document.querySelector('footer p').innerHTML = `© <span id="currentYear">${new Date().getFullYear()}</span> Filipe de Leonel Batista. ${t.footer}`;
-
-      // Update language toggle button
-      if (lang === 'pt') {
-        ptText.classList.remove('hidden');
-        enText.classList.add('hidden');
-      } else {
-        ptText.classList.add('hidden');
-        enText.classList.remove('hidden');
-      }
-    }
-
-    langToggle.addEventListener('click', () => {
-      const newLang = currentLang === 'pt' ? 'en' : 'pt';
-      updateLanguage(newLang);
-    });
-
-    // Initialize with Portuguese
-    updateLanguage('pt');
-  </script>
+  <script type="module" src="assets/js/main.js"></script>
 </body>
 
 </html>
