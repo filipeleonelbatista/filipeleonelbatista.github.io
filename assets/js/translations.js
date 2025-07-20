@@ -9,6 +9,9 @@ export const translations = {
     'linkedin-description': 'Postagens sobre desenvolvimento',
     'github': 'GitHub',
     'email': 'Email',
+    'kb-dev-sites': 'KB Dev Sites',
+    'whatsapp-ai': 'WhatsApp AI',
+    'resume-ai-cv': 'Resume AI CV',
 
     // Profile
     'profile-title': 'Filipe de Leonel Batista',
@@ -36,6 +39,9 @@ export const translations = {
     'whatsapp-url': "https://wa.me/+5551992736445?text=Ol%C3%A1%20Filipe%2C%0A%0AGostaria%20de%20conversar%20sobre%20um%20projeto.%20Podemos%20agendar%20uma%20reuni%C3%A3o%3F%0A%0AAtenciosamente.",
     'curriculo-url': './Curriculo.pdf',
     'github-url': 'https://github.com/filipeleonelbatista',
+    'kb-dev-sites-url': 'https://kbdevsite.vercel.app/',
+    'whatsapp-ai-url': 'https://enviodemensagensemmassa.vercel.app/',
+    'resume-ai-cv-url': 'https://resume-ai-cv.vercel.app/',
     
   },
   en: {
@@ -48,6 +54,9 @@ export const translations = {
     'linkedin-description': 'Development posts',
     'github': 'GitHub',
     'email': 'Email',
+    'kb-dev-sites': 'KB Dev Sites',
+    'whatsapp-ai': 'WhatsApp AI',
+    'resume-ai-cv': 'Resume AI CV',
 
     // Profile
     'profile-title': 'Filipe de Leonel Batista',
@@ -75,6 +84,9 @@ export const translations = {
     'whatsapp-url': "https://wa.me/+5551992736445?text=Hi%20Filipe%2C%0A%0AI%20would%20like%20to%20discuss%20a%20project%20with%20you.%20Can%20we%20schedule%20a%20meeting%3F%0A%0ABest%20regards.",
     'curriculo-url': './Resume.pdf',    
     'github-url': 'https://github.com/filipeleonelbatista/filipeleonelbatista/blob/master/README_EN.md',
+    'kb-dev-sites-url': 'https://kbdevsite.vercel.app/',
+    'whatsapp-ai-url': 'https://enviodemensagensemmassa.vercel.app/',
+    'resume-ai-cv-url': 'https://resume-ai-cv.vercel.app/',
   }
 };
 
