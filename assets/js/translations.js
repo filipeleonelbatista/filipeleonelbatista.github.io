@@ -40,7 +40,7 @@ export const translations = {
     'curriculo-url': './Curriculo.pdf',
     'github-url': 'https://github.com/filipeleonelbatista',
     'kb-dev-sites-url': 'https://kbdevsite.vercel.app/',
-    'whatsapp-ai-url': 'https://enviodemensagensemmassa.vercel.app/',
+    'whatsapp-ai-url': 'https://atendiazap.com.br/',
     'resume-ai-cv-url': 'https://resume-ai-cv.vercel.app/',
     
   },
@@ -85,7 +85,7 @@ export const translations = {
     'curriculo-url': './Resume.pdf',    
     'github-url': 'https://github.com/filipeleonelbatista/filipeleonelbatista/blob/master/README_EN.md',
     'kb-dev-sites-url': 'https://kbdevsite.vercel.app/',
-    'whatsapp-ai-url': 'https://enviodemensagensemmassa.vercel.app/',
+    'whatsapp-ai-url': 'https://atendiazap.com.br/',
     'resume-ai-cv-url': 'https://resume-ai-cv.vercel.app/',
   }
 };
