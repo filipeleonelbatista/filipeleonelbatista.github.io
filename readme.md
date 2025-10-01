@@ -73,7 +73,7 @@ pagamentos, e oferecendo mais previsibilidade e tranquilidade para os proprietá
 
 * **Resume AI CV:** Análise e geração de currículos inteligentes usando IA para maximizar match com vagas. [Veja mais](https://resume-ai-cv.vercel.app)
 * **Minhas Finanças:** Aplicativo web para gestão financeira familiar, com alertas inteligentes e dashboad customizado. [Veja mais](https://minhasfinancas.vercel.app)
-* **WhatsApp Sender:** Ferramenta de envios automáticos de mensagens com IA, aumentando engajamento em **45%**. [Veja mais](https://enviodemensagensemmassa.vercel.app)
+* **AtendIAZap:** Ferramenta de envios automáticos de mensagens com IA, aumentando engajamento em **45%**. [Veja mais](https://enviodemensagensemmassa.vercel.app)
 
 ---
 

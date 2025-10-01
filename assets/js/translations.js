@@ -23,7 +23,7 @@ export const translations = {
     'resume-ai-description': 'Análise e geração de currículos inteligentes usando IA para maximizar match com vagas.',
     'finances': 'MINHAS FINANÇAS$',
     'finances-description': 'Controle financeiro familiar com gestão de despesas e análise por IA.',
-    'messages': 'WhatsApp Sender',
+    'messages': 'AtendIAZap',
     'messages-description': 'Envio de mensagens em massa para WhatsApp automatizado com respostas por IA.',
     'view-project': 'Ver projeto',
 
@@ -68,7 +68,7 @@ export const translations = {
     'resume-ai-description': 'AI-powered resume analysis and generation to maximize job match.',
     'finances': 'MY FINANCES$',
     'finances-description': 'Family financial control with expense management and AI analysis.',
-    'messages': 'WhatsApp Sender',
+    'messages': 'AtendIAZap',
     'messages-description': 'Automated mass messaging for WhatsApp with AI responses.',
     'view-project': 'View project',
 

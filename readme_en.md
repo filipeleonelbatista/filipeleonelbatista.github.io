@@ -52,7 +52,7 @@ Worked in a real estate startup where a lean team of 5 people was responsible fo
 
 * **Resume AI CV:** AI-powered resume analysis and generation to maximize job matching. [See more](https://resume-ai-cv.vercel.app)
 * **My Finances:** Web application for family financial management, with smart alerts and customized dashboard. [See more](https://minhasfinancas.vercel.app)
-* **WhatsApp Sender:** Automated message sending tool with AI, increasing engagement by **45%**. [See more](https://enviodemensagensemmassa.vercel.app)
+* **AtendIAZap:** Automated message sending tool with AI, increasing engagement by **45%**. [See more](https://enviodemensagensemmassa.vercel.app)
 
 ---
 
