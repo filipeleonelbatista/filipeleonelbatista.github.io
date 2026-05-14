@@ -551,7 +551,34 @@
     :not([data-theme="light"]) .moon-icon { display: none; }
 
     /* ── Project Cards (video card style) ── */
+    .projects-scroll {
+      display: flex;
+      gap: 14px;
+      overflow-x: auto;
+      padding-bottom: 8px;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      padding-left: 2px;
+      padding-right: 2px;
+    }
+
+    .projects-scroll::-webkit-scrollbar {
+      height: 6px;
+    }
+
+    .projects-scroll::-webkit-scrollbar-track {
+      background: var(--surface);
+      border-radius: 3px;
+    }
+
+    .projects-scroll::-webkit-scrollbar-thumb {
+      background: var(--border);
+      border-radius: 3px;
+    }
+
     .project-card {
+      flex: 0 0 280px;
+      scroll-snap-align: start;
       display: block;
       background: var(--surface);
       border: 1px solid var(--border);
@@ -618,6 +645,9 @@
       white-space: nowrap;
       flex-shrink: 0;
     }
+
+    /* ── Avatar ── */
+    .avatar-ring { inset: -2px; }
   </style>
 </head>
 <body>
@@ -893,7 +923,7 @@
 
   <section aria-label="Projetos">
     <p class="label" style="margin-bottom: 12px" data-i18n="projects">Projetos</p>
-    <div class="links" style="gap:10px">
+    <div class="projects-scroll">
 
       <a class="project-card" href="https://atendiazap.com.br/" target="_blank" rel="noopener noreferrer">
         <img class="project-thumb" src="assets/images/enviodemensagens.png" alt="AtendIAZap">
