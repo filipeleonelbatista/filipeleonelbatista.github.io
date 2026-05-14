@@ -5,7 +5,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Filipe Leonel Batista — Links sociais">
-  <title>Filipe Leonel Batista</title>
+  <title>Filipe Batista | Desenvolvedor Full Stack React, Node.js & React Native</title>
+  <meta name="description" content="Desenvolvedor Full Stack com +5 anos de experiência em React, Node.js, React Native e TypeScript. Especialista em desenvolvimento web, mobile, APIs REST e integrações com IA.">
+  <meta name="author" content="Filipe de Leonel Batista">
+  <meta name="robots" content="index">
+
+  <meta property="og:title" content="Filipe Batista | Desenvolvedor Full Stack">
+  <meta property="og:description" content="Desenvolvedor Full Stack com +5 anos de experiência em React, Node.js, React Native e TypeScript.">
+  <meta property="og:url" content="https://filipeleonelbatista.github.io">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/banner.png">
+
+  <meta name="twitter:title" content="Filipe de Leonel Batista">
+  <meta name="twitter:description" content="Desenvolvedor de software com mais de 5 anos de experiência em desenvolvimento web e mobile.">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="canonical" href="https://filipeleonelbatista.github.io">
+  <link rel="shortcut icon" href="assets/images/icon.png" type="image/png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Person",
+    "name": "Filipe de Leonel Batista",
+    "jobTitle": "Desenvolvedor Full Stack",
+    "url": "https://filipeleonelbatista.github.io",
+    "sameAs": [
+      "https://linkedin.com/in/filipeleonelbatista",
+      "https://github.com/filipeleonelbatista",
+      "https://youtube.com/@filipeleonelbatista",
+      "https://instagram.com/filipeleonelbatista"
+    ],
+    "skills": ["React", "Node.js", "React Native", "TypeScript", "REST APIs", "Firebase", "Next.js"]
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <style>
@@ -21,6 +55,17 @@
       --yt-red:   oklch(56% 0.22 16);
       --f-ui:     'DM Sans', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
       --f-mono:   'JetBrains Mono', ui-monospace, Menlo, monospace;
+    }
+
+    [data-theme="light"] {
+      --bg:       oklch(98% 0.014 242);
+      --surface:  oklch(100% 0.014 242);
+      --surf2:   oklch(94% 0.014 242);
+      --fg:       oklch(10% 0.014 242);
+      --muted:    oklch(45% 0.014 242);
+      --border:   oklch(85% 0.014 242);
+      --blue:     oklch(55% 0.20 256);
+      --cyan:     oklch(65% 0.16 186);
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -137,6 +182,59 @@
       content: '//';
       color: var(--blue);
       letter-spacing: 0;
+    }
+
+    /* ── Quick Links ── */
+
+    .quick-links {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    .quick-link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 10px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 13px;
+      text-decoration: none;
+      color: var(--fg);
+      transition:
+        background 0.16s ease,
+        border-color 0.16s ease,
+        transform 0.12s ease;
+    }
+
+    .quick-link:hover {
+      background: var(--surf2);
+      border-color: var(--blue);
+      transform: translateY(-2px);
+    }
+
+    .quick-icon {
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .quick-icon svg {
+      width: 24px;
+      height: 24px;
+      fill: var(--fg);
+    }
+
+    .quick-label {
+      font-family: var(--f-mono);
+      font-size: 10px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
     }
 
     /* ── Link Cards ── */
@@ -405,9 +503,64 @@
     @media (min-width: 600px)  { body { padding: 64px 24px 80px; } }
     @media (min-width: 1024px) { body { padding: 80px 32px 96px; } }
     @media (min-width: 1440px) { body { padding: 96px 40px 112px; } }
+
+    /* ── Top Controls ── */
+
+    .top-controls {
+      position: fixed;
+      top: 16px;
+      right: 16px;
+      display: flex;
+      gap: 8px;
+      z-index: 100;
+    }
+
+    .control-btn {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--fg);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.16s ease, border-color 0.16s ease;
+    }
+
+    .control-btn:hover {
+      background: var(--surf2);
+      border-color: var(--blue);
+    }
+
+    .control-btn svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    .lang-label {
+      font-family: var(--f-mono);
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    [data-theme="light"] .sun-icon { display: none; }
+    [data-theme="light"] .moon-icon { display: block; }
+    :not([data-theme="light"]) .sun-icon { display: block; }
+    :not([data-theme="light"]) .moon-icon { display: none; }
   </style>
 </head>
 <body>
+<div class="top-controls">
+  <button id="lang-toggle" class="control-btn" title="Alternar idioma">
+    <span class="lang-label">BR</span>
+  </button>
+  <button id="theme-toggle" class="control-btn" title="Alternar tema">
+    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+  </button>
+</div>
 <main class="page">
 
   <header class="profile">
@@ -427,13 +580,35 @@
     <p class="profile-bio">Desenvolvedor Full Stack com +5 anos de experiência em React, Node.js, React Native e TypeScript. Especialista em desenvolvimento web, mobile e integrações com IA.</p>
   </header>
 
+  <div class="quick-links">
+    <a class="quick-link" href="https://github.com/filipeleonelbatista" data-i18n-href="github-url" target="_blank" rel="noopener noreferrer">
+      <div class="quick-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+      </div>
+      <span class="quick-label">GitHub</span>
+    </a>
+    <a class="quick-link" href="./Curriculo.pdf" download="Curriculo.pdf" rel="noopener noreferrer">
+      <div class="quick-icon">
+        <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
+      </div>
+      <span class="quick-label">Currículo</span>
+    </a>
+    <a class="quick-link" href="https://linkedin.com/in/filipeleonelbatista" data-i18n-href="linkedin-url" target="_blank" rel="noopener noreferrer">
+      <div class="quick-icon">
+        <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      </div>
+      <span class="quick-label">LinkedIn</span>
+    </a>
+  </div>
+
   <section aria-label="Redes sociais">
     <p class="label" style="margin-bottom: 12px">Redes</p>
     <div class="links">
 
-      <a class="link" style="--pc: oklch(56% 0.18 236)"
-         href="https://linkedin.com/in/filipeleonelbatista"
-         target="_blank" rel="noopener noreferrer">
+<a class="link" style="--pc: oklch(56% 0.18 236)"
+          href="https://linkedin.com/in/filipeleonelbatista"
+          data-i18n-href="linkedin"
+          target="_blank" rel="noopener noreferrer">
         <div class="link-icon" style="background: oklch(56% 0.18 236)">
           <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
         </div>
@@ -444,9 +619,10 @@
         <svg class="link-arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
 
-      <a class="link" style="--pc: oklch(56% 0.22 16)"
-         href="https://youtube.com/@filipeleonelbatista"
-         target="_blank" rel="noopener noreferrer">
+<a class="link" style="--pc: oklch(56% 0.22 16)"
+          href="https://youtube.com/@filipeleonelbatista"
+          data-i18n-href="youtube"
+          target="_blank" rel="noopener noreferrer">
         <div class="link-icon" style="background: oklch(56% 0.22 16)">
           <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
         </div>
@@ -457,21 +633,23 @@
         <svg class="link-arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
 
-      <a class="link" style="--pc: oklch(80% 0 0)"
-         href="https://x.com/filipeleonelbatista"
-         target="_blank" rel="noopener noreferrer">
+<a class="link" style="--pc: oklch(80% 0 0)"
+          href="https://x.com/filipeboficial"
+          data-i18n-href="x"
+          target="_blank" rel="noopener noreferrer">
         <div class="link-icon" style="background: oklch(18% 0 0); border: 1px solid oklch(28% 0 0)">
           <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.742l7.736-8.86L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="white"/></svg>
         </div>
         <div class="link-body">
           <div class="link-platform">X · Twitter</div>
-          <div class="link-handle">@filipeleonelbatista</div>
+          <div class="link-handle">@filipeboficial</div>
         </div>
         <svg class="link-arr" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
 
 <a class="link" style="--pc: oklch(65% 0.22 2)"
           href="https://instagram.com/filipeleonelbatista"
+          data-i18n-href="instagram-url"
           target="_blank" rel="noopener noreferrer">
         <div class="link-icon" style="background: linear-gradient(135deg,#f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)">
           <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
@@ -485,6 +663,7 @@
 
       <a class="link" style="--pc: oklch(20% 0 0)"
           href="https://github.com/filipeleonelbatista"
+          data-i18n-href="github-url"
           target="_blank" rel="noopener noreferrer">
         <div class="link-icon" style="background: oklch(20% 0 0)">
           <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
@@ -498,6 +677,7 @@
 
       <a class="link" style="--pc: oklch(75% 0.18 150)"
           href="https://wa.me/+5551992736445"
+          data-i18n-href="whatsapp-url"
           target="_blank" rel="noopener noreferrer">
         <div class="link-icon" style="background: oklch(75% 0.18 150)">
           <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/></svg>
@@ -511,6 +691,7 @@
 
       <a class="link" style="--pc: oklch(58% 0.22 265)"
           href="mailto:filipe.x2016@gmail.com"
+          data-i18n-href="email-url"
           target="_blank" rel="noopener noreferrer">
         <div class="link-icon" style="background: oklch(58% 0.22 265)">
           <svg viewBox="0 0 24 24"><path d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
@@ -524,6 +705,7 @@
 
       <a class="link" style="--pc: oklch(57% 0.26 291)"
           href="https://discord.com/users/280715729404166144"
+          data-i18n-href="discord-url"
           target="_blank" rel="noopener noreferrer">
         <div class="link-icon" style="background: oklch(57% 0.26 291)">
           <svg viewBox="0 0 24 24"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419-.0002 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9554 2.4189-2.1568 2.4189Z"/></svg>
@@ -544,6 +726,7 @@
 
       <a class="link" style="--pc: oklch(55% 0.20 200)"
           href="https://resume-ai-cv.vercel.app/"
+          data-i18n-href="resume-ai-cv-url"
           target="_blank" rel="noopener noreferrer">
         <div class="link-icon" style="background: oklch(55% 0.20 200)">
           <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
@@ -557,6 +740,7 @@
 
       <a class="link" style="--pc: oklch(75% 0.18 150)"
           href="https://atendiazap.com.br/"
+          data-i18n-href="whatsapp-ai-url"
           target="_blank" rel="noopener noreferrer">
         <div class="link-icon" style="background: oklch(75% 0.18 150)">
           <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/></svg>
@@ -570,6 +754,7 @@
 
       <a class="link" style="--pc: oklch(65% 0.18 130)"
           href="https://minhasfinancas.vercel.app/"
+          data-i18n-href="finances-url"
           target="_blank" rel="noopener noreferrer">
         <div class="link-icon" style="background: oklch(65% 0.18 130)">
           <svg viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
@@ -583,6 +768,7 @@
 
       <a class="link" style="--pc: oklch(50% 0.18 240)"
           href="https://kbdevsite.vercel.app/"
+          data-i18n-href="kb-dev-sites-url"
           target="_blank" rel="noopener noreferrer">
         <div class="link-icon" style="background: oklch(50% 0.18 240)">
           <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
@@ -596,6 +782,7 @@
 
       <a class="link" style="--pc: oklch(60% 0.14 250)"
           href="./Curriculo.pdf"
+          data-i18n-href="curriculo-url"
           download="Curriculo.pdf"
           rel="noopener noreferrer">
         <div class="link-icon" style="background: oklch(60% 0.14 250)">
@@ -616,25 +803,25 @@
   <footer class="footer">
     <p class="label" style="justify-content:center;margin-bottom:12px">Conecte-se</p>
     <div class="links" style="flex-direction:row;flex-wrap:wrap;justify-content:center;gap:16px;">
-      <a href="https://github.com/filipeleonelbatista" target="_blank" rel="noopener noreferrer" style="color:var(--muted)" title="GitHub">
+      <a href="https://github.com/filipeleonelbatista" data-i18n-href="github-url" target="_blank" rel="noopener noreferrer" style="color:var(--muted)" title="GitHub">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
       </a>
-      <a href="mailto:filipe.x2016@gmail.com?subject=Olá%20Filipe%2C%20gostaria%20de%20conversar%20sobre%20um%20projeto" style="color:var(--muted)" title="Email">
+      <a href="mailto:filipe.x2016@gmail.com" data-i18n-href="email-url" style="color:var(--muted)" title="Email">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
       </a>
-      <a href="https://wa.me/+5551992736445?text=Olá%20Filipe%2C%20gostaria%20de%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener noreferrer" style="color:var(--muted)" title="WhatsApp">
+      <a href="https://wa.me/+5551992736445" data-i18n-href="whatsapp-url" target="_blank" rel="noopener noreferrer" style="color:var(--muted)" title="WhatsApp">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/></svg>
       </a>
-      <a href="https://discord.com/users/280715729404166144" target="_blank" rel="noopener noreferrer" style="color:var(--muted)" title="Discord">
+      <a href="https://discord.com/users/280715729404166144" data-i18n-href="discord-url" target="_blank" rel="noopener noreferrer" style="color:var(--muted)" title="Discord">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419-.0002 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9554 2.4189-2.1568 2.4189Z"/></svg>
       </a>
-      <a href="https://facebook.com/filipeleonelbatista" target="_blank" rel="noopener noreferrer" style="color:var(--muted)" title="Facebook">
+      <a href="https://facebook.com/filipeleonelbatista" data-i18n-href="facebook-url" target="_blank" rel="noopener noreferrer" style="color:var(--muted)" title="Facebook">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
       </a>
-      <a href="https://instagram.com/filipeleonelbatista" target="_blank" rel="noopener noreferrer" style="color:var(--muted)" title="Instagram">
+      <a href="https://instagram.com/filipeleonelbatista" data-i18n-href="instagram-url" target="_blank" rel="noopener noreferrer" style="color:var(--muted)" title="Instagram">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
       </a>
-      <a href="https://linkedin.com/in/filipeleonelbatista" target="_blank" rel="noopener noreferrer" style="color:var(--muted)" title="LinkedIn">
+      <a href="https://linkedin.com/in/filipeleonelbatista" data-i18n-href="linkedin-url" target="_blank" rel="noopener noreferrer" style="color:var(--muted)" title="LinkedIn">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
       </a>
     </div>
@@ -642,6 +829,162 @@
   </footer>
 
 </main>
+
+<script>
+  // Theme and Language Toggle
+  const translations = {
+    br: {
+      quickLinks: 'Acesso Rápido',
+      networks: 'Redes',
+      projects: 'Projetos',
+      youtube: 'Canal no Youtube',
+      connect: 'Conecte-se',
+      profileBio: 'Desenvolvedor Full Stack com +5 anos de experiência em React, Node.js, React Native e TypeScript. Especialista em desenvolvimento web, mobile e integrações com IA.',
+      resumeAI: 'Resume AI CV',
+      resumeAIDesc: 'Análise e geração de currículos inteligentes usando IA.',
+      atendiazap: 'AtendIAZap',
+      atendiazapDesc: 'Envio de mensagens em massa para WhatsApp automatizado com IA.',
+      finances: 'MINHAS FINANÇAS$',
+      financesDesc: 'Controle financeiro familiar com gestão de despesas e análise por IA.',
+      kbDev: 'KB Dev Sites',
+      kbDevDesc: 'Templates de portfólio para desenvolvedores.',
+      resume: 'Currículo',
+      linkedin: 'LinkedIn',
+      linkedinDesc: 'Postagens sobre desenvolvimento',
+      github: 'GitHub',
+      githubDesc: 'Meus projetos',
+      youtubeLink: 'YouTube',
+      youtubeDesc: 'Assista meus vídeos',
+      xTwitter: 'X · Twitter',
+      xDesc: ' thoughts',
+      instagram: 'Instagram',
+      instagramDesc: 'Vida pessoal e code',
+      whatsapp: 'WhatsApp',
+      whatsappDesc: 'Entre em contato',
+      email: 'Email',
+      emailDesc: 'Me mande um email',
+      discord: 'Discord',
+      discordDesc: 'Vamos conversar',
+      lastVideo: 'Último vídeo',
+      short: 'SHORT',
+      watch: 'Assistir →',
+      ytChannel: '@filipeleonelbatista'
+    },
+    en: {
+      quickLinks: 'Quick Access',
+      networks: 'Networks',
+      projects: 'Projects',
+      youtube: 'YouTube Channel',
+      connect: 'Connect',
+      profileBio: 'Full Stack Developer with +5 years of experience in React, Node.js, React Native and TypeScript. Specialist in web, mobile development and AI integrations.',
+      resumeAI: 'Resume AI CV',
+      resumeAIDesc: 'AI-powered resume analysis and generation for job applications.',
+      atendiazap: 'AtendIAZap',
+      atendiazapDesc: 'Mass WhatsApp messaging with AI-powered automated responses.',
+      finances: 'MY FINANCES$',
+      financesDesc: 'Family financial control with expense management and AI analysis.',
+      kbDev: 'KB Dev Sites',
+      kbDevDesc: 'Developer portfolio templates.',
+      resume: 'Resume',
+      linkedin: 'LinkedIn',
+      linkedinDesc: 'Development posts',
+      github: 'GitHub',
+      githubDesc: 'My projects',
+      youtubeLink: 'YouTube',
+      youtubeDesc: 'Watch my videos',
+      xTwitter: 'X · Twitter',
+      xDesc: ' thoughts',
+      instagram: 'Instagram',
+      instagramDesc: 'Personal life & code',
+      whatsapp: 'WhatsApp',
+      whatsappDesc: 'Get in touch',
+      email: 'Email',
+      emailDesc: 'Send me an email',
+      discord: 'Discord',
+      discordDesc: "Let's chat",
+      lastVideo: 'Latest video',
+      short: 'SHORT',
+      watch: 'Watch →',
+      ytChannel: '@filipeleonelbatista'
+    }
+  };
+
+  const urlTranslations = {
+    br: {
+      'linkedin-url': 'https://linkedin.com/in/filipeleonelbatista',
+      'github-url': 'https://github.com/filipeleonelbatista',
+      'youtube-url': 'https://youtube.com/@filipeleonelbatista',
+      'x-url': 'https://x.com/filipeboficial',
+      'instagram-url': 'https://instagram.com/filipeleonelbatista',
+      'whatsapp-url': 'https://wa.me/+5551992736445?text=Ol%C3%A1%20Filipe%2C%0A%0AGostaria%20de%20conversar%20sobre%20um%20projeto.%20Podemos%20agendar%20uma%20reuni%C3%A3o%3F%0A%0AAtenciosamente.',
+      'email-url': 'mailto:filipe.x2016@gmail.com?subject=Ol%C3%A1%20Filipe%2C%20gostaria%20de%20conversar%20sobre%20um%20projeto&body=Ol%C3%A1%20Filipe%2C%0A%0AGostaria%20de%20conversar%20sobre%20um%20projeto.%20Podemos%20agendar%20uma%20reuni%C3%A3o%3F%0A%0AAtenciosamente%2C%0A',
+      'discord-url': 'https://discord.com/users/280715729404166144',
+      'facebook-url': 'https://facebook.com/filipeleonelbatista',
+      'curriculo-url': './Curriculo.pdf',
+      'kb-dev-sites-url': 'https://kbdevsite.vercel.app/',
+      'whatsapp-ai-url': 'https://atendiazap.com.br/',
+      'resume-ai-cv-url': 'https://resume-ai-cv.vercel.app/',
+      'finances-url': 'https://minhasfinancas.vercel.app/'
+    },
+    en: {
+      'linkedin-url': 'https://www.linkedin.com/in/filipeleonelbatista/?locale=en_US',
+      'github-url': 'https://github.com/filipeleonelbatista/filipeleonelbatista/blob/master/README_EN.md',
+      'youtube-url': 'https://youtube.com/@filipeleonelbatista',
+      'x-url': 'https://x.com/filipeboficial',
+      'instagram-url': 'https://instagram.com/filipeleonelbatista',
+      'whatsapp-url': 'https://wa.me/+5551992736445?text=Hi%20Filipe%2C%0A%0AI%20would%20like%20to%20discuss%20a%20project%20with%20you.%20Can%20we%20schedule%20a%20meeting%3F%0A%0ABest%20regards.',
+      'email-url': 'mailto:filipe.x2016@gmail.com?subject=Hi%20Filipe%2C%20I%20would%20like%20to%20discuss%20a%20project&body=Hi%20Filipe%2C%0A%0AI%20would%20like%20to%20discuss%20a%20project%20with%20you.%20Can%20we%20schedule%20a%20meeting%3F%0A%0ABest%20regards%2C%0A',
+      'discord-url': 'https://discord.com/users/280715729404166144',
+      'facebook-url': 'https://facebook.com/filipeleonelbatista',
+      'curriculo-url': './Resume.pdf',
+      'kb-dev-sites-url': 'https://kbdevsite.vercel.app/',
+      'whatsapp-ai-url': 'https://atendiazap.com.br/',
+      'resume-ai-cv-url': 'https://resume-ai-cv.vercel.app/',
+      'finances-url': 'https://minhasfinancas.vercel.app/'
+    }
+  };
+
+  let currentLang = localStorage.getItem('lang') || 'br';
+  let currentTheme = localStorage.getItem('theme') || 'dark';
+
+  function applyTheme() {
+    document.documentElement.setAttribute('data-theme', currentTheme === 'light' ? 'light' : '');
+  }
+
+  function updateURLs() {
+    document.querySelectorAll('[data-i18n-href]').forEach(el => {
+      const key = el.getAttribute('data-i18n-href');
+      if (urlTranslations[currentLang] && urlTranslations[currentLang][key]) {
+        el.href = urlTranslations[currentLang][key];
+      }
+    });
+  }
+
+  function setLanguage(lang) {
+    currentLang = lang;
+    localStorage.setItem('lang', lang);
+    document.documentElement.lang = lang === 'en' ? 'en' : 'pt-BR';
+    document.querySelector('.lang-label').textContent = lang.toUpperCase();
+    applyTheme();
+    updateURLs();
+  }
+
+  document.getElementById('theme-toggle').addEventListener('click', () => {
+    currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    localStorage.setItem('theme', currentTheme);
+    applyTheme();
+  });
+
+  document.getElementById('lang-toggle').addEventListener('click', () => {
+    setLanguage(currentLang === 'br' ? 'en' : 'br');
+  });
+
+  // Initialize
+  applyTheme();
+  document.documentElement.lang = currentLang === 'en' ? 'en' : 'pt-BR';
+  document.querySelector('.lang-label').textContent = currentLang.toUpperCase();
+  updateURLs();
+</script>
 
 <script>
   (async () => {
