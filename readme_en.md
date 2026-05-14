@@ -29,6 +29,11 @@
 
 ## 💼 Professional Experience
 
+### CI&T - Front-end Engineer React
+*Aug 2025 – Today*
+
+I work on a strategic project for a leading global multinational in the beverage sector, where I am part of a multidisciplinary squad responsible for developing large-scale digital experiences with a focus on usability, performance, and sustainable architecture. My main responsibilities include developing modern interfaces using React.js, TypeScript, and Styled Components, integrating with REST APIs and corporate services in a global environment, creating reusable and accessible components following clean code standards and good architectural practices, and participating in agile processes and code reviews to ensure quality and technical consistency.
+
 ### Recrutei – Frontend React Developer
 *Aug 2024 – Dec 2024*
 
@@ -38,11 +43,6 @@ Participated in implementing the Ultra feature, which incorporated AI-based anal
 *Sep 2022 – Jul 2024*
 
 Worked on developing and maintaining a benefits club application for a global supermarket chain, serving 12 brands and impacting approximately 4 million customers. I was responsible for designing and implementing a new experience for viewing statements and benefits, allowing customers to easily access information about their purchases and benefits usage. The initiative resulted in a significant increase in benefit redemptions, contributing to around R$ 800,000 in club member sales at launch.
-
-### Moben – Fullstack Web Developer
-*Jul 2021 – Sep 2022*
-
-Worked in a real estate startup where a lean team of 5 people was responsible for serving about 1,000 customers. Developed and maintained both the user interface and backend of the application, with emphasis on creating the rental contract generation flow. This functionality resulted in over 300 closed contracts, optimizing communication with tenants through automatic payment messages, and offering more predictability and peace of mind for property owners.
 
 [🔗 Download my complete CV (PDF)](./Resume.pdf)
 

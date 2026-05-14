@@ -3,7 +3,7 @@
 <h1 align="left">👋 Olá, eu sou Filipe de Leonel Batista</h1>
 
 <p align="left">
-  <strong>Desenvolvedor Full Stack</strong> com <strong>+5 anos</strong> de experiência em <strong>ReactJS</strong>, <strong>React Native</strong> e <strong>Next.js</strong>. Especialista em criar aplicações web e mobile escaláveis, com foco em alta performance, segurança e usabilidade. Expertise em arquitetura de microserviços, integrações via APIs, WebSockets e Inteligência Artificial.
+  <strong>Desenvolvedor Full Stack</strong> com <strong>+7 anos</strong> de experiência em <strong>ReactJS</strong>, <strong>React Native</strong> e <strong>Next.js</strong>. Especialista em criar aplicações web e mobile escaláveis, com foco em alta performance, segurança e usabilidade. Expertise em arquitetura de microserviços, integrações via APIs, WebSockets e Inteligência Artificial.
 </p>
 
 ## 🔎 Sobre Mim
@@ -29,6 +29,19 @@
 
 ## 💼 Experiência Profissional
 
+### CI&T - Desenvolvedor Front-end React 
+
+*Ago 2025 – atual*
+
+Atuo em um projeto estratégico para uma multinacional líder global no setor de bebidas, 
+onde integro uma squad multidisciplinar responsável por desenvolver experiências digitais 
+em larga escala com foco em usabilidade performance e arquitetura sustentável minhas 
+principais atividades envolvem o desenvolvimento de interfaces modernas utilizando 
+React.js TypeScript e Styled Components a integração com APIs REST e serviços corporativos 
+em ambiente global a criação de componentes reutilizáveis e acessíveis seguindo 
+padrões de código limpo e boas práticas de arquitetura além da  articipação em ritos ágeis 
+e code reviews para garantir qualidade e consistência técnica.
+
 ### Recrutei – Desenvolvedor Frontend React
 
 *Ago 2024 – Dez 2024*
@@ -52,18 +65,6 @@ visualização de extratos e benefícios, permitindo que os clientes acessem fac
 informações sobre suas compras e uso dos benefícios. A iniciativa resultou em um aumento
 significativo no número de resgates de benefícios, contribuindo para cerca de R$ 800 mil em
 vendas para membros do clube no lançamento.
-
-
-### Moben – Desenvolvedor Web Fullstack
-
-*Jul 2021 – Set 2022*
-
-Atuei em uma startup do setor imobiliário, onde uma equipe enxuta de 5 pessoas era
-responsável por atender cerca de 1.000 clientes. Desenvolvi e mantive tanto a interface do
-usuário quanto o backend da aplicação, com destaque para a criação do fluxo de geração de
-contratos de aluguel. Essa funcionalidade resultou em mais de 300 contratos fechados,
-otimizando a comunicação com os inquilinos por meio de mensagens automáticas sobre
-pagamentos, e oferecendo mais previsibilidade e tranquilidade para os proprietários.
 
 [🔗 Baixe meu CV completo (PDF)](./Curriculo.pdf)
 
