@@ -106,13 +106,13 @@
 
     .avatar-wrap {
       position: relative;
-      width: 96px;
-      height: 96px;
+      width: 120px;
+      height: 120px;
     }
 
     .avatar-ring {
       position: absolute;
-      inset: -4px;
+      inset: -1px;
       border-radius: 50%;
       background: conic-gradient(from 0deg, var(--blue), var(--cyan), var(--blue), var(--cyan), var(--blue));
       animation: spin-ring 6s linear infinite;
@@ -123,14 +123,14 @@
 
     .avatar-gap {
       position: absolute;
-      inset: 3px;
+      inset: 2px;
       border-radius: 50%;
       background: var(--bg);
     }
 
     .avatar {
       position: absolute;
-      inset: 7px;
+      inset: 4px;
       border-radius: 50%;
       overflow: hidden;
       background: var(--surface);
@@ -155,7 +155,7 @@
       font-size: 12px;
       color: var(--cyan);
       letter-spacing: 0.02em;
-      margin-top: -4px;
+      margin-top: 4px;
     }
 
     .profile-bio {
@@ -496,7 +496,7 @@
       text-align: center;
       font-family: var(--f-mono);
       font-size: 10.5px;
-      color: oklch(30% 0.01 242);
+      color: var(--muted);
       letter-spacing: 0.05em;
     }
 
@@ -646,9 +646,7 @@
       flex-shrink: 0;
     }
 
-    /* ── Avatar ── */
-    .avatar-ring { inset: -2px; }
-  </style>
+    </style>
 </head>
 <body>
 <div class="top-controls">
@@ -686,7 +684,7 @@
       </div>
       <span class="quick-label" data-i18n="githubLabel">GitHub</span>
     </a>
-    <a class="quick-link" href="./Curriculo.pdf" download="Curriculo.pdf" rel="noopener noreferrer">
+    <a class="quick-link" href="./Curriculo.pdf" data-i18n-href="curriculo-url" download="Curriculo.pdf" rel="noopener noreferrer">
       <div class="quick-icon">
         <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
       </div>
@@ -701,7 +699,7 @@
   </div>
 
   <section class="video-wrap" aria-label="Último vídeo">
-    <p class="label">Último vídeo</p>
+    <p class="label" data-i18n="lastVideo">Último vídeo</p>
     <a class="video-card" id="yt-card"
        href="https://youtube.com/@filipeleonelbatista"
        target="_blank" rel="noopener noreferrer">
@@ -719,7 +717,7 @@
           <div class="video-title" id="yt-title">Carregando…</div>
           <div class="video-sub">@filipeleonelbatista</div>
         </div>
-        <span class="video-cta">Assistir →</span>
+        <span class="video-cta" data-i18n="watch">Assistir →</span>
       </div>
     </a>
   </section>
@@ -843,7 +841,7 @@
     </div>
   </section>
 
-  <section aria-label="Projetos">
+  <section aria-label="Projetos" style="padding-top: 16px">
     <p class="label" style="margin-bottom: 12px" data-i18n="projects">Projetos</p>
     <div class="projects-scroll">
 
@@ -855,37 +853,37 @@
           </div>
           <div class="project-info">
             <div class="project-title">AtendIAZap</div>
-            <div class="project-desc">WhatsApp • Automação</div>
+            <div class="project-desc" data-i18n="whatsappAiProj">WhatsApp • Automação</div>
           </div>
-          <span class="project-cta">Ver projeto →</span>
+          <span class="project-cta" data-i18n="watchProject">Ver projeto →</span>
         </div>
       </a>
 
       <a class="project-card" href="https://resume-ai-cv.vercel.app/" target="_blank" rel="noopener noreferrer">
         <img class="project-thumb" src="assets/images/resume-ia.png" alt="Resume AI CV">
         <div class="project-meta">
-          <div class="project-icon" style="background: oklch(55% 0.20 200)">
-            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+          <div class="project-icon" style="background: oklch(75% 0.18 280)">
+            <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
           </div>
           <div class="project-info">
             <div class="project-title">Resume AI CV</div>
-            <div class="project-desc">IA • Web App</div>
+            <div class="project-desc" data-i18n="resumeAIProj">IA • Web App</div>
           </div>
-          <span class="project-cta">Ver projeto →</span>
+          <span class="project-cta" data-i18n="watchProject">Ver projeto →</span>
         </div>
       </a>
 
       <a class="project-card" href="https://minhasfinancas.vercel.app/" target="_blank" rel="noopener noreferrer">
         <img class="project-thumb" src="assets/images/minhas-financas.png" alt="MINHAS FINANÇAS$">
         <div class="project-meta">
-          <div class="project-icon" style="background: oklch(65% 0.18 130)">
-            <svg viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+          <div class="project-icon" style="background: oklch(45% 0.22 280)">
+            <svg viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6" fill="none" stroke="white" stroke-width="2"/></svg>
           </div>
           <div class="project-info">
-            <div class="project-title">MINHAS FINANÇAS$</div>
-            <div class="project-desc">Finanças • PWA</div>
+            <div class="project-title" data-i18n="finances">MINHAS FINANÇAS$</div>
+            <div class="project-desc" data-i18n="financesProj">Finanças • PWA</div>
           </div>
-          <span class="project-cta">Ver projeto →</span>
+          <span class="project-cta" data-i18n="watchProject">Ver projeto →</span>
         </div>
       </a>
 
