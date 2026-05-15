@@ -509,10 +509,9 @@ body {
   display: flex;
   gap: 14px;
   overflow-x: auto;
-  padding-bottom: 8px;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
-  padding: 4px 2px;
+  padding: 8px;
 }
 
 .projects-scroll::-webkit-scrollbar {
