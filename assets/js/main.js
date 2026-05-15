@@ -38,6 +38,7 @@ const translations = {
     ytChannel: '@filipeleonelbatista',
     githubLabel: 'GitHub',
     curriculumLabel: 'Currículo',
+    curriculumDownload: 'Curriculo-Filipe-Batista-Desenvolvedor Fullstack.pdf',
     linkedinLabel: 'LinkedIn',
     resumeAIProj: 'IA • Web App',
     whatsappAiProj: 'WhatsApp • Automação',
@@ -85,6 +86,7 @@ const translations = {
     ytChannel: '@filipeleonelbatista',
     githubLabel: 'GitHub',
     curriculumLabel: 'Resume',
+    curriculumDownload: 'Resume-Filipe-Batista-Fullstack Developer.pdf',
     linkedinLabel: 'LinkedIn',
     resumeAIProj: 'AI • Web App',
     whatsappAiProj: 'WhatsApp • Automation',
@@ -168,6 +170,12 @@ function translatePage() {
     const key = el.getAttribute('data-i18n-placeholder');
     if (translations[currentLang][key]) {
       el.placeholder = translations[currentLang][key];
+    }
+  });
+  document.querySelectorAll('[data-i18n-download]').forEach(el => {
+    const key = el.getAttribute('data-i18n-download');
+    if (translations[currentLang][key]) {
+      el.download = translations[currentLang][key];
     }
   });
   const ytBadge = document.getElementById('yt-badge');
