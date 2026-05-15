@@ -512,8 +512,7 @@ body {
   padding-bottom: 8px;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
-  padding-left: 2px;
-  padding-right: 2px;
+  padding: 4px 2px;
 }
 
 .projects-scroll::-webkit-scrollbar {
