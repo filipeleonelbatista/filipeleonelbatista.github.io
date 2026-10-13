@@ -206,7 +206,7 @@ translatePage();
   const CHANNEL = 'UCYUeJiqZCXcABWukG9RvQtw';
   const RSS = 'https://www.youtube.com/feeds/videos.xml?channel_id=' + CHANNEL;
   const PROXIES = [
-    'https://corsproxy.io/?url=' + encodeURIComponent(RSS),
+    'https://corsproxy.io/?key=21444668&url=' + encodeURIComponent(RSS),
     'https://api.allorigins.win/raw?url=' + encodeURIComponent(RSS)
   ];
 
