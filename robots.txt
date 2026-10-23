@@ -4,3 +4,5 @@ Allow: /
 
 # Host
 Host: https://filipeleonelbatista.github.io/
+
+Sitemap: https://filipeleonelbatista.github.io/sitemap.xml
